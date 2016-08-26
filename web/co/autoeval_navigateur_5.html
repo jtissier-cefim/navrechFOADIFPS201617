@@ -1,0 +1,1508 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <title>Internet un outil collaboratif, navigateurs et moteurs de recherche - Solution d'exercice</title>
+  <meta charset="UTF-8">
+  <meta name="template" content="evalPlayer">
+  <meta name="author" content="J.Tissier ">
+  <meta name="keywords" content>
+  <meta name="date" content="20/07/2016">
+  <link rel="stylesheet" type="text/css" href="../wdgt/scCodeMgr/scCodeMgr.css">
+  <link rel="stylesheet" type="text/css" href="../wdgt/scImgMgr/scImgMgr.css">
+  <script type="text/JavaScript">
+/*0*/ var scServices = {};
+/*1*/ scServices["scLoad"] = {loadFromRoot:function(pUrl){window.location.href="../"+pUrl;}, getPathFromRoot:function(pPath){return "../"+pPath;}, getUrlFromRoot:function(pHref){if(!this.fRootOffset) this.fRootOffset = scCoLib.hrefBase().length-29; return pHref.substring(this.fRootOffset);},getRootUrl:function(){if(!this.fRootUrl) this.fRootUrl = scCoLib.hrefBase().substring(0,scCoLib.hrefBase().length-30); return this.fRootUrl;}};
+</script>
+  <!--[if lt IE 9]><script type="text/JavaScript" src="../wdgt/html5shiv/html5shiv.js"></script><![endif]--><script type="text/JavaScript" src="../lib-sm/scCoLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sm/scSiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sm/scPaLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sm/scTiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sm/scDynUiMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sm/scTooltipMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sm/scMapMgr.js"></script>
+  <script type="text/JavaScript" src="../svc/scorm.js"></script>
+  <script type="text/JavaScript" src="../lib-sm/scDragMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sma/scAssmntMgr.js"></script>
+  <script type="text/JavaScript" src="../svc/scSearch/scSearch.js"></script>
+  <script type="text/JavaScript" src="../wdgt/tplMgr/tplMgr.js"></script>
+  <script type="text/JavaScript" src="../wdgt/dynSizes/dynSizes.js"></script>
+  <script type="text/JavaScript" src="../wdgt/scCodeMgr/scCodeMgr.js"></script>
+  <script type="text/JavaScript" src="../wdgt/scImgMgr/scImgMgr.js"></script>
+  <script type="text/JavaScript">
+/*0*/ try{var vCurrDir = scCoLib.hrefBase().substring(0,scCoLib.hrefBase().lastIndexOf("/")+1); if(window.opener && window.opener.location.href.lastIndexOf(vCurrDir, vCurrDir.length)==0 && window.opener.scServices) scServices = window.opener.scServices; else if(window.parent && window.parent.location.href.lastIndexOf(vCurrDir, vCurrDir.length)==0 && window.parent.scServices) scServices = window.parent.scServices;}catch(e){}
+scCodeMgr.registerCode("des:div.code");
+
+scImgMgr.registerGallery("des:div.galFra");
+
+scImgMgr.registerZoom("des:a.imgZoom",{toolbar:1,mag:1,titlePath:"par:/nsi:/chi:span.capTi"});
+
+</script>
+  <meta name="generator" content="SCENARI 4.1.10 / Opale 3.5.014 - http://scenari-platform.org/opale">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="revision" content="2016-08-26 08:06">
+  <link rel="start" href="Exports_InternetCollaboratifNavigation.html" title="Internet un outil collaboratif, navigateurs et moteurs de recherche">
+  <script type="text/javascript">try{
+	if(window.frameElement.setSubWindowTitle) window.frameElement.setSubWindowTitle(document.title);
+}catch(e){}
+</script>
+  <script type="text/javascript"> scSiLib.getContentHeight = function(pContainer) {
+ var vCh = pContainer.lastChild;
+ var vH = 0;
+ while(vCh && ( vCh.nodeType != 1 || ! (vH = vCh.offsetHeight) || vCh.style.position=="absolute") ) vCh = vCh.previousSibling;
+ if(vCh) {
+  return vCh.offsetTop + vH;
+ }
+ return Number.NaN;
+}</script>
+  <link type="text/css" rel="stylesheet" href="../skin/css/html.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/struct_eval.css" media="screen">
+  <link type="text/css" rel="stylesheet" href="../skin/css/buttons.css" media="screen">
+  <link type="text/css" rel="stylesheet" href="../skin/css/transf.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/assmnt.css">
+  <!--[if IE]><link type="text/css" rel="stylesheet" href="../skin/css/ie.css" media="screen"/><![endif]-->
+  <!--[if lt IE 7]><link type="text/css" rel="stylesheet" href="../skin/css/ie6_eval.css" media="screen"/><![endif]--><link type="text/css" rel="stylesheet" href="../skin/css/print.css" media="print">
+ </head>
+ <body>
+  <div id="tplFra"><div id="tplCo"><div id="evalPlayerCo" class="scroller"><div id="tplCoMarginW"><div id="tplCoFlexTop"></div><div id="evalPlayerCo2"><div><div><div class="coQuiz "><div class="coQuizQuest "></div><div class="coQuizList "><div class="subQuiz "><h2 class="subQuiz_ti"><span>Exercice</span></h2><div class="subQuiz_co "><script type="text/JavaScript">
+var hVVzsXpLzGcviZxcLuulSh_Asol = {
+
+	fId : "hVVzsXpLzGcviZxcLuulSh",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+case "" : {
+		var vForm = document.forms.hVVzsXpLzGcviZxcLuulSh_Asol_form;
+		for (var i=0; i < vForm.length; i++) {
+			vForm.elements[i].disabled = true;
+			vForm.elements[i].checked = false;
+		}
+
+var vLoadRespSession = "eval";
+var vResp = scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, "choice");
+		if(vResp != null) sc$("hVVzsXpLzGcviZxcLuulSh_Asol_"+vResp).checked = true;
+var vLoadScoreSession = "eval";
+		this.fMinPts = scServices.assmntMgr.getMinPts(this.fId, vLoadScoreSession);
+		this.fScorePts = scServices.assmntMgr.getScorePts(this.fId, vLoadScoreSession);
+		this.fMaxPts = scServices.assmntMgr.getMaxPts(this.fId, vLoadScoreSession);
+
+		this.setSolution(true);
+scAssmntMgr.setMode(sc$("hVVzsXpLzGcviZxcLuulSh_Asol_N_quest"), "visible");
+scAssmntMgr.setMode(sc$("hVVzsXpLzGcviZxcLuulSh_Asol_N_question"), "visible");
+scAssmntMgr.setMode(sc$("hVVzsXpLzGcviZxcLuulSh_Asol_N0_choice"), "visible");
+scAssmntMgr.setMode(sc$("hVVzsXpLzGcviZxcLuulSh_Asol_N1_choice"), "visible");
+scAssmntMgr.setMode(sc$("hVVzsXpLzGcviZxcLuulSh_Asol_N2_choice"), "visible");
+scAssmntMgr.setMode(sc$("hVVzsXpLzGcviZxcLuulSh_Asol_N3_choice"), "visible");
+scAssmntMgr.setMode(sc$("hVVzsXpLzGcviZxcLuulSh_Asol_N4_choice"), "visible");
+scAssmntMgr.setMode(sc$("hVVzsXpLzGcviZxcLuulSh_Asol_N0_label"), "visible");
+scAssmntMgr.setMode(sc$("hVVzsXpLzGcviZxcLuulSh_Asol_N1_label"), "visible");
+scAssmntMgr.setMode(sc$("hVVzsXpLzGcviZxcLuulSh_Asol_N2_label"), "visible");
+scAssmntMgr.setMode(sc$("hVVzsXpLzGcviZxcLuulSh_Asol_N3_label"), "visible");
+scAssmntMgr.setMode(sc$("hVVzsXpLzGcviZxcLuulSh_Asol_N4_label"), "visible");
+this.setResp = function(pInput, pIdx) {
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}	
+
+		this.computeScore = function() {
+
+			this.refreshScoresFeedbacks();
+		}
+
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.hVVzsXpLzGcviZxcLuulSh_Asol_form;
+		switch(this.fCurSeq) {
+
+	case "" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+			return "";
+
+	return null;
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+		var vScoreNode = sc$("hVVzsXpLzGcviZxcLuulSh_Asol_SN47");
+
+		var vStep = 1;
+		var vScore = Math.round(this.fScorePts / vStep);
+		function scoreStr(pVal){
+			return new Number(pVal).toFixed(0);
+		}
+if(vScore <= 0 && true) {
+			vScoreNode.innerHTML = "Votre réponse est incorrecte."+"";
+			vScoreNode.className = "answWorst";
+		} else if(true) {
+			vScoreNode.innerHTML = "Votre réponse est juste."+"";
+			vScoreNode.className = "answBest";
+		} else  {
+			vScoreNode.innerHTML = "";
+			vScoreNode.className = "";
+		}
+
+	},
+	solIsShown : false,
+	setSolution : function(pShown){
+		var vTR = document.forms.hVVzsXpLzGcviZxcLuulSh_Asol_form.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		vTR = vTR.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		if(vTR.nodeName.toLowerCase()=="tbody") vTR = vTR.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		if(!pShown && this.solIsShown) {
+			while(vTR) {
+				if(vTR.nodeName.toLowerCase()=="tr") {
+					var vOffs = vTR.className.indexOf("assmntSol");
+					if(vOffs>=0) vTR.className = vTR.className.substring(0, vOffs) + vTR.className.substring(vOffs+14);
+				}
+				vTR = vTR.nextSibling;
+			}
+		} else if(pShown && ! this.solIsShown) {
+
+			var vIdx = 0;
+			while(vTR) {
+				if(vTR.nodeName.toLowerCase()=="tr") {
+					vIdx++;
+					vTR.className = ( vIdx == 3 ? "assmntSolRight " : "assmntSolWrong ") + vTR.className;
+				}
+				vTR = vTR.nextSibling;
+			}
+
+		}
+		this.solIsShown = pShown;
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("hVVzsXpLzGcviZxcLuulSh_Asol_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = hVVzsXpLzGcviZxcLuulSh_Asol;
+scOnUnloads[scOnUnloads.length] = hVVzsXpLzGcviZxcLuulSh_Asol;
+</script><div id="hVVzsXpLzGcviZxcLuulSh_Asol_A" style="display:none;"><div class="evalSol"><div id="hVVzsXpLzGcviZxcLuulSh_Asol_N_quest" class="question"><h1 class="question_ti"><span>&Eacute;nonc&eacute;</span></h1><div id="hVVzsXpLzGcviZxcLuulSh_Asol_N_question" class="question_co"><div><p class="op_txt_p">1/10 A quoi ressemble le logo de Firefox</p></div></div></div><div class="score"><h1 class="score_ti"><span>R&eacute;sultat</span></h1><div class="score_co"><div class="scoreEval " aria-live="polite"><div id="hVVzsXpLzGcviZxcLuulSh_Asol_SN47"><span></span></div></div></div></div><div class="sol"><h1 class="sol_ti"><span>Correction</span></h1><div class="sol_co"><form action name="hVVzsXpLzGcviZxcLuulSh_Asol_form" id="hVVzsXpLzGcviZxcLuulSh_Asol_form"><table class="choiceList "><tr class="choiceList_ch "><td class="choiceList_in "><input type="radio" name="hVVzsXpLzGcviZxcLuulSh_Asol_radio" id="hVVzsXpLzGcviZxcLuulSh_Asol_0" value="0" onclick="hVVzsXpLzGcviZxcLuulSh_Asol.setResp(this, 0);"></td><td class="choiceList_la "><div id="hVVzsXpLzGcviZxcLuulSh_Asol_N0_choice" class="choice"><div id="hVVzsXpLzGcviZxcLuulSh_Asol_N0_label" class="label"><p class="op_txt_p">Une boussole</p></div></div></td></tr><tr class="choiceList_ch "><td class="choiceList_in "><input type="radio" name="hVVzsXpLzGcviZxcLuulSh_Asol_radio" id="hVVzsXpLzGcviZxcLuulSh_Asol_1" value="1" onclick="hVVzsXpLzGcviZxcLuulSh_Asol.setResp(this, 1);"></td><td class="choiceList_la "><div id="hVVzsXpLzGcviZxcLuulSh_Asol_N1_choice" class="choice"><div id="hVVzsXpLzGcviZxcLuulSh_Asol_N1_label" class="label"><p class="op_txt_p">Un oignon violet</p></div></div></td></tr><tr class="choiceList_ch "><td class="choiceList_in "><input type="radio" name="hVVzsXpLzGcviZxcLuulSh_Asol_radio" id="hVVzsXpLzGcviZxcLuulSh_Asol_2" value="2" onclick="hVVzsXpLzGcviZxcLuulSh_Asol.setResp(this, 2);"></td><td class="choiceList_la "><div id="hVVzsXpLzGcviZxcLuulSh_Asol_N2_choice" class="choice"><div id="hVVzsXpLzGcviZxcLuulSh_Asol_N2_label" class="label"><p class="op_txt_p">Un renard entourant une plan&egrave;te</p></div></div></td></tr><tr class="choiceList_ch "><td class="choiceList_in "><input type="radio" name="hVVzsXpLzGcviZxcLuulSh_Asol_radio" id="hVVzsXpLzGcviZxcLuulSh_Asol_3" value="3" onclick="hVVzsXpLzGcviZxcLuulSh_Asol.setResp(this, 3);"></td><td class="choiceList_la "><div id="hVVzsXpLzGcviZxcLuulSh_Asol_N3_choice" class="choice"><div id="hVVzsXpLzGcviZxcLuulSh_Asol_N3_label" class="label"><p class="op_txt_p">Un cercle rouge</p></div></div></td></tr><tr class="choiceList_ch "><td class="choiceList_in "><input type="radio" name="hVVzsXpLzGcviZxcLuulSh_Asol_radio" id="hVVzsXpLzGcviZxcLuulSh_Asol_4" value="4" onclick="hVVzsXpLzGcviZxcLuulSh_Asol.setResp(this, 4);"></td><td class="choiceList_la "><div id="hVVzsXpLzGcviZxcLuulSh_Asol_N4_choice" class="choice"><div id="hVVzsXpLzGcviZxcLuulSh_Asol_N4_label" class="label"><p class="op_txt_p">Je ne sais pas</p></div></div></td></tr></table></form></div></div></div></div></div></div><div class="subQuiz "><h2 class="subQuiz_ti"><span>Exercice</span></h2><div class="subQuiz_co "><script type="text/JavaScript">
+var tzwXTLz0OddnrmIpOZ5k1_Asol = {
+
+	fId : "tzwXTLz0OddnrmIpOZ5k1",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+case "" : {
+		var vForm = document.forms.tzwXTLz0OddnrmIpOZ5k1_Asol_form;
+		for (var i=0; i < vForm.length; i++) {
+			vForm.elements[i].disabled = true;
+			vForm.elements[i].checked = false;
+		}
+
+var vLoadRespSession = "eval";
+var vResp = scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, "choice");
+		if(vResp != null) sc$("tzwXTLz0OddnrmIpOZ5k1_Asol_"+vResp).checked = true;
+var vLoadScoreSession = "eval";
+		this.fMinPts = scServices.assmntMgr.getMinPts(this.fId, vLoadScoreSession);
+		this.fScorePts = scServices.assmntMgr.getScorePts(this.fId, vLoadScoreSession);
+		this.fMaxPts = scServices.assmntMgr.getMaxPts(this.fId, vLoadScoreSession);
+
+		this.setSolution(true);
+scAssmntMgr.setMode(sc$("tzwXTLz0OddnrmIpOZ5k1_Asol_N_quest"), "visible");
+scAssmntMgr.setMode(sc$("tzwXTLz0OddnrmIpOZ5k1_Asol_N_question"), "visible");
+scAssmntMgr.setMode(sc$("tzwXTLz0OddnrmIpOZ5k1_Asol_N0_choice"), "visible");
+scAssmntMgr.setMode(sc$("tzwXTLz0OddnrmIpOZ5k1_Asol_N1_choice"), "visible");
+scAssmntMgr.setMode(sc$("tzwXTLz0OddnrmIpOZ5k1_Asol_N2_choice"), "visible");
+scAssmntMgr.setMode(sc$("tzwXTLz0OddnrmIpOZ5k1_Asol_N3_choice"), "visible");
+scAssmntMgr.setMode(sc$("tzwXTLz0OddnrmIpOZ5k1_Asol_N0_label"), "visible");
+scAssmntMgr.setMode(sc$("tzwXTLz0OddnrmIpOZ5k1_Asol_N1_label"), "visible");
+scAssmntMgr.setMode(sc$("tzwXTLz0OddnrmIpOZ5k1_Asol_N2_label"), "visible");
+scAssmntMgr.setMode(sc$("tzwXTLz0OddnrmIpOZ5k1_Asol_N3_label"), "visible");
+this.setResp = function(pInput, pIdx) {
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}	
+
+		this.computeScore = function() {
+
+			this.refreshScoresFeedbacks();
+		}
+
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.tzwXTLz0OddnrmIpOZ5k1_Asol_form;
+		switch(this.fCurSeq) {
+
+	case "" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+			return "";
+
+	return null;
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+		var vScoreNode = sc$("tzwXTLz0OddnrmIpOZ5k1_Asol_SN47");
+
+		var vStep = 1;
+		var vScore = Math.round(this.fScorePts / vStep);
+		function scoreStr(pVal){
+			return new Number(pVal).toFixed(0);
+		}
+if(vScore <= 0 && true) {
+			vScoreNode.innerHTML = "Votre réponse est incorrecte."+"";
+			vScoreNode.className = "answWorst";
+		} else if(true) {
+			vScoreNode.innerHTML = "Votre réponse est juste."+"";
+			vScoreNode.className = "answBest";
+		} else  {
+			vScoreNode.innerHTML = "";
+			vScoreNode.className = "";
+		}
+
+	},
+	solIsShown : false,
+	setSolution : function(pShown){
+		var vTR = document.forms.tzwXTLz0OddnrmIpOZ5k1_Asol_form.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		vTR = vTR.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		if(vTR.nodeName.toLowerCase()=="tbody") vTR = vTR.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		if(!pShown && this.solIsShown) {
+			while(vTR) {
+				if(vTR.nodeName.toLowerCase()=="tr") {
+					var vOffs = vTR.className.indexOf("assmntSol");
+					if(vOffs>=0) vTR.className = vTR.className.substring(0, vOffs) + vTR.className.substring(vOffs+14);
+				}
+				vTR = vTR.nextSibling;
+			}
+		} else if(pShown && ! this.solIsShown) {
+
+			var vIdx = 0;
+			while(vTR) {
+				if(vTR.nodeName.toLowerCase()=="tr") {
+					vIdx++;
+					vTR.className = ( vIdx == 1 ? "assmntSolRight " : "assmntSolWrong ") + vTR.className;
+				}
+				vTR = vTR.nextSibling;
+			}
+
+		}
+		this.solIsShown = pShown;
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("tzwXTLz0OddnrmIpOZ5k1_Asol_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = tzwXTLz0OddnrmIpOZ5k1_Asol;
+scOnUnloads[scOnUnloads.length] = tzwXTLz0OddnrmIpOZ5k1_Asol;
+</script><div id="tzwXTLz0OddnrmIpOZ5k1_Asol_A" style="display:none;"><div class="evalSol"><div id="tzwXTLz0OddnrmIpOZ5k1_Asol_N_quest" class="question"><h1 class="question_ti"><span>&Eacute;nonc&eacute;</span></h1><div id="tzwXTLz0OddnrmIpOZ5k1_Asol_N_question" class="question_co"><div><p class="op_txt_p">2/10 Lorsque l'on veut revenir sur une page pr&eacute;c&eacute;dente, sur quelle ic&ocirc;ne doit-on cliquer ?</p></div></div></div><div class="score"><h1 class="score_ti"><span>R&eacute;sultat</span></h1><div class="score_co"><div class="scoreEval " aria-live="polite"><div id="tzwXTLz0OddnrmIpOZ5k1_Asol_SN47"><span></span></div></div></div></div><div class="sol"><h1 class="sol_ti"><span>Correction</span></h1><div class="sol_co"><form action name="tzwXTLz0OddnrmIpOZ5k1_Asol_form" id="tzwXTLz0OddnrmIpOZ5k1_Asol_form"><table class="choiceList "><tr class="choiceList_ch "><td class="choiceList_in "><input type="radio" name="tzwXTLz0OddnrmIpOZ5k1_Asol_radio" id="tzwXTLz0OddnrmIpOZ5k1_Asol_0" value="0" onclick="tzwXTLz0OddnrmIpOZ5k1_Asol.setResp(this, 0);"></td><td class="choiceList_la "><div id="tzwXTLz0OddnrmIpOZ5k1_Asol_N0_choice" class="choice"><div id="tzwXTLz0OddnrmIpOZ5k1_Asol_N0_label" class="label"><p class="op_txt_p">La fl&egrave;che gauche en haut &agrave; gauche du navigateur</p></div></div></td></tr><tr class="choiceList_ch "><td class="choiceList_in "><input type="radio" name="tzwXTLz0OddnrmIpOZ5k1_Asol_radio" id="tzwXTLz0OddnrmIpOZ5k1_Asol_1" value="1" onclick="tzwXTLz0OddnrmIpOZ5k1_Asol.setResp(this, 1);"></td><td class="choiceList_la "><div id="tzwXTLz0OddnrmIpOZ5k1_Asol_N1_choice" class="choice"><div id="tzwXTLz0OddnrmIpOZ5k1_Asol_N1_label" class="label"><p class="op_txt_p">La fl&egrave;che droite en haut &agrave; gauche du navigateur</p></div></div></td></tr><tr class="choiceList_ch "><td class="choiceList_in "><input type="radio" name="tzwXTLz0OddnrmIpOZ5k1_Asol_radio" id="tzwXTLz0OddnrmIpOZ5k1_Asol_2" value="2" onclick="tzwXTLz0OddnrmIpOZ5k1_Asol.setResp(this, 2);"></td><td class="choiceList_la "><div id="tzwXTLz0OddnrmIpOZ5k1_Asol_N2_choice" class="choice"><div id="tzwXTLz0OddnrmIpOZ5k1_Asol_N2_label" class="label"><p class="op_txt_p">La petite maison</p></div></div></td></tr><tr class="choiceList_ch "><td class="choiceList_in "><input type="radio" name="tzwXTLz0OddnrmIpOZ5k1_Asol_radio" id="tzwXTLz0OddnrmIpOZ5k1_Asol_3" value="3" onclick="tzwXTLz0OddnrmIpOZ5k1_Asol.setResp(this, 3);"></td><td class="choiceList_la "><div id="tzwXTLz0OddnrmIpOZ5k1_Asol_N3_choice" class="choice"><div id="tzwXTLz0OddnrmIpOZ5k1_Asol_N3_label" class="label"><p class="op_txt_p">Je ne sais pas</p></div></div></td></tr></table></form></div></div></div></div></div></div><div class="subQuiz "><h2 class="subQuiz_ti"><span>Exercice</span></h2><div class="subQuiz_co "><script type="text/JavaScript">
+var AWefo9pCuGjDiHVyDDYAKf_Asol = {
+
+	fId : "AWefo9pCuGjDiHVyDDYAKf",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+case "" : {
+		var vForm = document.forms.AWefo9pCuGjDiHVyDDYAKf_Asol_form;
+		for (var i=0; i < vForm.length; i++) {
+			vForm.elements[i].disabled = true;
+			vForm.elements[i].checked = false;
+		}
+
+var vLoadRespSession = "eval";
+var vResp = scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, "choice");
+		if(vResp != null) sc$("AWefo9pCuGjDiHVyDDYAKf_Asol_"+vResp).checked = true;
+var vLoadScoreSession = "eval";
+		this.fMinPts = scServices.assmntMgr.getMinPts(this.fId, vLoadScoreSession);
+		this.fScorePts = scServices.assmntMgr.getScorePts(this.fId, vLoadScoreSession);
+		this.fMaxPts = scServices.assmntMgr.getMaxPts(this.fId, vLoadScoreSession);
+
+		this.setSolution(true);
+scAssmntMgr.setMode(sc$("AWefo9pCuGjDiHVyDDYAKf_Asol_N_quest"), "visible");
+scAssmntMgr.setMode(sc$("AWefo9pCuGjDiHVyDDYAKf_Asol_N_question"), "visible");
+scAssmntMgr.setMode(sc$("AWefo9pCuGjDiHVyDDYAKf_Asol_N0_choice"), "visible");
+scAssmntMgr.setMode(sc$("AWefo9pCuGjDiHVyDDYAKf_Asol_N1_choice"), "visible");
+scAssmntMgr.setMode(sc$("AWefo9pCuGjDiHVyDDYAKf_Asol_N2_choice"), "visible");
+scAssmntMgr.setMode(sc$("AWefo9pCuGjDiHVyDDYAKf_Asol_N0_label"), "visible");
+scAssmntMgr.setMode(sc$("AWefo9pCuGjDiHVyDDYAKf_Asol_N1_label"), "visible");
+scAssmntMgr.setMode(sc$("AWefo9pCuGjDiHVyDDYAKf_Asol_N2_label"), "visible");
+this.setResp = function(pInput, pIdx) {
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}	
+
+		this.computeScore = function() {
+
+			this.refreshScoresFeedbacks();
+		}
+
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.AWefo9pCuGjDiHVyDDYAKf_Asol_form;
+		switch(this.fCurSeq) {
+
+	case "" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+			return "";
+
+	return null;
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+		var vScoreNode = sc$("AWefo9pCuGjDiHVyDDYAKf_Asol_SN47");
+
+		var vStep = 1;
+		var vScore = Math.round(this.fScorePts / vStep);
+		function scoreStr(pVal){
+			return new Number(pVal).toFixed(0);
+		}
+if(vScore <= 0 && true) {
+			vScoreNode.innerHTML = "Votre réponse est incorrecte."+"";
+			vScoreNode.className = "answWorst";
+		} else if(true) {
+			vScoreNode.innerHTML = "Votre réponse est juste."+"";
+			vScoreNode.className = "answBest";
+		} else  {
+			vScoreNode.innerHTML = "";
+			vScoreNode.className = "";
+		}
+
+	},
+	solIsShown : false,
+	setSolution : function(pShown){
+		var vTR = document.forms.AWefo9pCuGjDiHVyDDYAKf_Asol_form.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		vTR = vTR.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		if(vTR.nodeName.toLowerCase()=="tbody") vTR = vTR.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		if(!pShown && this.solIsShown) {
+			while(vTR) {
+				if(vTR.nodeName.toLowerCase()=="tr") {
+					var vOffs = vTR.className.indexOf("assmntSol");
+					if(vOffs>=0) vTR.className = vTR.className.substring(0, vOffs) + vTR.className.substring(vOffs+14);
+				}
+				vTR = vTR.nextSibling;
+			}
+		} else if(pShown && ! this.solIsShown) {
+
+			var vIdx = 0;
+			while(vTR) {
+				if(vTR.nodeName.toLowerCase()=="tr") {
+					vIdx++;
+					vTR.className = ( vIdx == 1 ? "assmntSolRight " : "assmntSolWrong ") + vTR.className;
+				}
+				vTR = vTR.nextSibling;
+			}
+
+		}
+		this.solIsShown = pShown;
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("AWefo9pCuGjDiHVyDDYAKf_Asol_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = AWefo9pCuGjDiHVyDDYAKf_Asol;
+scOnUnloads[scOnUnloads.length] = AWefo9pCuGjDiHVyDDYAKf_Asol;
+</script><div id="AWefo9pCuGjDiHVyDDYAKf_Asol_A" style="display:none;"><div class="evalSol"><div id="AWefo9pCuGjDiHVyDDYAKf_Asol_N_quest" class="question"><h1 class="question_ti"><span>&Eacute;nonc&eacute;</span></h1><div id="AWefo9pCuGjDiHVyDDYAKf_Asol_N_question" class="question_co"><div><p class="op_txt_p">3/10 Puis-je saisir une recherche dans la barre d'adresse du navigateur&nbsp;? </p></div></div></div><div class="score"><h1 class="score_ti"><span>R&eacute;sultat</span></h1><div class="score_co"><div class="scoreEval " aria-live="polite"><div id="AWefo9pCuGjDiHVyDDYAKf_Asol_SN47"><span></span></div></div></div></div><div class="sol"><h1 class="sol_ti"><span>Correction</span></h1><div class="sol_co"><form action name="AWefo9pCuGjDiHVyDDYAKf_Asol_form" id="AWefo9pCuGjDiHVyDDYAKf_Asol_form"><table class="choiceList "><tr class="choiceList_ch "><td class="choiceList_in "><input type="radio" name="AWefo9pCuGjDiHVyDDYAKf_Asol_radio" id="AWefo9pCuGjDiHVyDDYAKf_Asol_0" value="0" onclick="AWefo9pCuGjDiHVyDDYAKf_Asol.setResp(this, 0);"></td><td class="choiceList_la "><div id="AWefo9pCuGjDiHVyDDYAKf_Asol_N0_choice" class="choice"><div id="AWefo9pCuGjDiHVyDDYAKf_Asol_N0_label" class="label"><p class="op_txt_p">Oui</p></div></div></td></tr><tr class="choiceList_ch "><td class="choiceList_in "><input type="radio" name="AWefo9pCuGjDiHVyDDYAKf_Asol_radio" id="AWefo9pCuGjDiHVyDDYAKf_Asol_1" value="1" onclick="AWefo9pCuGjDiHVyDDYAKf_Asol.setResp(this, 1);"></td><td class="choiceList_la "><div id="AWefo9pCuGjDiHVyDDYAKf_Asol_N1_choice" class="choice"><div id="AWefo9pCuGjDiHVyDDYAKf_Asol_N1_label" class="label"><p class="op_txt_p">Non</p></div></div></td></tr><tr class="choiceList_ch "><td class="choiceList_in "><input type="radio" name="AWefo9pCuGjDiHVyDDYAKf_Asol_radio" id="AWefo9pCuGjDiHVyDDYAKf_Asol_2" value="2" onclick="AWefo9pCuGjDiHVyDDYAKf_Asol.setResp(this, 2);"></td><td class="choiceList_la "><div id="AWefo9pCuGjDiHVyDDYAKf_Asol_N2_choice" class="choice"><div id="AWefo9pCuGjDiHVyDDYAKf_Asol_N2_label" class="label"><p class="op_txt_p">Je ne sais pas</p></div></div></td></tr></table></form></div></div></div></div></div></div><div class="subQuiz "><h2 class="subQuiz_ti"><span>Exercice</span></h2><div class="subQuiz_co "><script type="text/JavaScript">
+var HVx8us7ABtErPfqGnGPFe_Asol = {
+
+	fId : "HVx8us7ABtErPfqGnGPFe",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+case "" : {
+		var vForm = document.forms.HVx8us7ABtErPfqGnGPFe_Asol_form;
+		for (var i=0; i < vForm.length; i++) {
+			vForm.elements[i].disabled = true;
+			vForm.elements[i].checked = false;
+		}
+
+var vLoadRespSession = "eval";
+var vResp = scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, "choice");
+		if(vResp != null) sc$("HVx8us7ABtErPfqGnGPFe_Asol_"+vResp).checked = true;
+var vLoadScoreSession = "eval";
+		this.fMinPts = scServices.assmntMgr.getMinPts(this.fId, vLoadScoreSession);
+		this.fScorePts = scServices.assmntMgr.getScorePts(this.fId, vLoadScoreSession);
+		this.fMaxPts = scServices.assmntMgr.getMaxPts(this.fId, vLoadScoreSession);
+
+		this.setSolution(true);
+scAssmntMgr.setMode(sc$("HVx8us7ABtErPfqGnGPFe_Asol_N_quest"), "visible");
+scAssmntMgr.setMode(sc$("HVx8us7ABtErPfqGnGPFe_Asol_N_question"), "visible");
+scAssmntMgr.setMode(sc$("HVx8us7ABtErPfqGnGPFe_Asol_N0_choice"), "visible");
+scAssmntMgr.setMode(sc$("HVx8us7ABtErPfqGnGPFe_Asol_N1_choice"), "visible");
+scAssmntMgr.setMode(sc$("HVx8us7ABtErPfqGnGPFe_Asol_N2_choice"), "visible");
+scAssmntMgr.setMode(sc$("HVx8us7ABtErPfqGnGPFe_Asol_N3_choice"), "visible");
+scAssmntMgr.setMode(sc$("HVx8us7ABtErPfqGnGPFe_Asol_N0_label"), "visible");
+scAssmntMgr.setMode(sc$("HVx8us7ABtErPfqGnGPFe_Asol_N1_label"), "visible");
+scAssmntMgr.setMode(sc$("HVx8us7ABtErPfqGnGPFe_Asol_N2_label"), "visible");
+scAssmntMgr.setMode(sc$("HVx8us7ABtErPfqGnGPFe_Asol_N3_label"), "visible");
+this.setResp = function(pInput, pIdx) {
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}	
+
+		this.computeScore = function() {
+
+			this.refreshScoresFeedbacks();
+		}
+
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.HVx8us7ABtErPfqGnGPFe_Asol_form;
+		switch(this.fCurSeq) {
+
+	case "" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+			return "";
+
+	return null;
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+		var vScoreNode = sc$("HVx8us7ABtErPfqGnGPFe_Asol_SN47");
+
+		var vStep = 1;
+		var vScore = Math.round(this.fScorePts / vStep);
+		function scoreStr(pVal){
+			return new Number(pVal).toFixed(0);
+		}
+if(vScore <= 0 && true) {
+			vScoreNode.innerHTML = "Votre réponse est incorrecte."+"";
+			vScoreNode.className = "answWorst";
+		} else if(true) {
+			vScoreNode.innerHTML = "Votre réponse est juste."+"";
+			vScoreNode.className = "answBest";
+		} else  {
+			vScoreNode.innerHTML = "";
+			vScoreNode.className = "";
+		}
+
+	},
+	solIsShown : false,
+	setSolution : function(pShown){
+		var vTR = document.forms.HVx8us7ABtErPfqGnGPFe_Asol_form.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		vTR = vTR.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		if(vTR.nodeName.toLowerCase()=="tbody") vTR = vTR.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		if(!pShown && this.solIsShown) {
+			while(vTR) {
+				if(vTR.nodeName.toLowerCase()=="tr") {
+					var vOffs = vTR.className.indexOf("assmntSol");
+					if(vOffs>=0) vTR.className = vTR.className.substring(0, vOffs) + vTR.className.substring(vOffs+14);
+				}
+				vTR = vTR.nextSibling;
+			}
+		} else if(pShown && ! this.solIsShown) {
+
+			var vIdx = 0;
+			while(vTR) {
+				if(vTR.nodeName.toLowerCase()=="tr") {
+					vIdx++;
+					vTR.className = ( vIdx == 3 ? "assmntSolRight " : "assmntSolWrong ") + vTR.className;
+				}
+				vTR = vTR.nextSibling;
+			}
+
+		}
+		this.solIsShown = pShown;
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("HVx8us7ABtErPfqGnGPFe_Asol_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = HVx8us7ABtErPfqGnGPFe_Asol;
+scOnUnloads[scOnUnloads.length] = HVx8us7ABtErPfqGnGPFe_Asol;
+</script><div id="HVx8us7ABtErPfqGnGPFe_Asol_A" style="display:none;"><div class="evalSol"><div id="HVx8us7ABtErPfqGnGPFe_Asol_N_quest" class="question"><h1 class="question_ti"><span>&Eacute;nonc&eacute;</span></h1><div id="HVx8us7ABtErPfqGnGPFe_Asol_N_question" class="question_co"><div><p class="op_txt_p">4/10 Comment retrouver rapidement un site que l'on vient de visiter ?</p></div></div></div><div class="score"><h1 class="score_ti"><span>R&eacute;sultat</span></h1><div class="score_co"><div class="scoreEval " aria-live="polite"><div id="HVx8us7ABtErPfqGnGPFe_Asol_SN47"><span></span></div></div></div></div><div class="sol"><h1 class="sol_ti"><span>Correction</span></h1><div class="sol_co"><form action name="HVx8us7ABtErPfqGnGPFe_Asol_form" id="HVx8us7ABtErPfqGnGPFe_Asol_form"><table class="choiceList "><tr class="choiceList_ch "><td class="choiceList_in "><input type="radio" name="HVx8us7ABtErPfqGnGPFe_Asol_radio" id="HVx8us7ABtErPfqGnGPFe_Asol_0" value="0" onclick="HVx8us7ABtErPfqGnGPFe_Asol.setResp(this, 0);"></td><td class="choiceList_la "><div id="HVx8us7ABtErPfqGnGPFe_Asol_N0_choice" class="choice"><div id="HVx8us7ABtErPfqGnGPFe_Asol_N0_label" class="label"><p class="op_txt_p">Gr&acirc;ce &agrave; la fonction 'affichage'</p></div></div></td></tr><tr class="choiceList_ch "><td class="choiceList_in "><input type="radio" name="HVx8us7ABtErPfqGnGPFe_Asol_radio" id="HVx8us7ABtErPfqGnGPFe_Asol_1" value="1" onclick="HVx8us7ABtErPfqGnGPFe_Asol.setResp(this, 1);"></td><td class="choiceList_la "><div id="HVx8us7ABtErPfqGnGPFe_Asol_N1_choice" class="choice"><div id="HVx8us7ABtErPfqGnGPFe_Asol_N1_label" class="label"><p class="op_txt_p">Gr&acirc;ce &agrave; la fonction 'outils'</p></div></div></td></tr><tr class="choiceList_ch "><td class="choiceList_in "><input type="radio" name="HVx8us7ABtErPfqGnGPFe_Asol_radio" id="HVx8us7ABtErPfqGnGPFe_Asol_2" value="2" onclick="HVx8us7ABtErPfqGnGPFe_Asol.setResp(this, 2);"></td><td class="choiceList_la "><div id="HVx8us7ABtErPfqGnGPFe_Asol_N2_choice" class="choice"><div id="HVx8us7ABtErPfqGnGPFe_Asol_N2_label" class="label"><p class="op_txt_p">Gr&acirc;ce &agrave; la fonction 'historique'</p></div></div></td></tr><tr class="choiceList_ch "><td class="choiceList_in "><input type="radio" name="HVx8us7ABtErPfqGnGPFe_Asol_radio" id="HVx8us7ABtErPfqGnGPFe_Asol_3" value="3" onclick="HVx8us7ABtErPfqGnGPFe_Asol.setResp(this, 3);"></td><td class="choiceList_la "><div id="HVx8us7ABtErPfqGnGPFe_Asol_N3_choice" class="choice"><div id="HVx8us7ABtErPfqGnGPFe_Asol_N3_label" class="label"><p class="op_txt_p">Je ne sais pas</p></div></div></td></tr></table></form></div></div></div></div></div></div><div class="subQuiz "><h2 class="subQuiz_ti"><span>Exercice</span></h2><div class="subQuiz_co "><script type="text/JavaScript">
+var E4VAHIU7JSiGBZIKqqOCyi_Asol = {
+
+	fId : "E4VAHIU7JSiGBZIKqqOCyi",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+case "" : {
+		var vForm = document.forms.E4VAHIU7JSiGBZIKqqOCyi_Asol_form;
+		for (var i=0; i < vForm.length; i++) {
+			vForm.elements[i].disabled = true;
+			vForm.elements[i].checked = false;
+		}
+
+var vLoadRespSession = "eval";
+var vResp = scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, "choice");
+		if(vResp != null) sc$("E4VAHIU7JSiGBZIKqqOCyi_Asol_"+vResp).checked = true;
+var vLoadScoreSession = "eval";
+		this.fMinPts = scServices.assmntMgr.getMinPts(this.fId, vLoadScoreSession);
+		this.fScorePts = scServices.assmntMgr.getScorePts(this.fId, vLoadScoreSession);
+		this.fMaxPts = scServices.assmntMgr.getMaxPts(this.fId, vLoadScoreSession);
+
+		this.setSolution(true);
+scAssmntMgr.setMode(sc$("E4VAHIU7JSiGBZIKqqOCyi_Asol_N_quest"), "visible");
+scAssmntMgr.setMode(sc$("E4VAHIU7JSiGBZIKqqOCyi_Asol_N_question"), "visible");
+scAssmntMgr.setMode(sc$("E4VAHIU7JSiGBZIKqqOCyi_Asol_N0_choice"), "visible");
+scAssmntMgr.setMode(sc$("E4VAHIU7JSiGBZIKqqOCyi_Asol_N1_choice"), "visible");
+scAssmntMgr.setMode(sc$("E4VAHIU7JSiGBZIKqqOCyi_Asol_N2_choice"), "visible");
+scAssmntMgr.setMode(sc$("E4VAHIU7JSiGBZIKqqOCyi_Asol_N3_choice"), "visible");
+scAssmntMgr.setMode(sc$("E4VAHIU7JSiGBZIKqqOCyi_Asol_N4_choice"), "visible");
+scAssmntMgr.setMode(sc$("E4VAHIU7JSiGBZIKqqOCyi_Asol_N0_label"), "visible");
+scAssmntMgr.setMode(sc$("E4VAHIU7JSiGBZIKqqOCyi_Asol_N1_label"), "visible");
+scAssmntMgr.setMode(sc$("E4VAHIU7JSiGBZIKqqOCyi_Asol_N2_label"), "visible");
+scAssmntMgr.setMode(sc$("E4VAHIU7JSiGBZIKqqOCyi_Asol_N3_label"), "visible");
+scAssmntMgr.setMode(sc$("E4VAHIU7JSiGBZIKqqOCyi_Asol_N4_label"), "visible");
+this.setResp = function(pInput, pIdx) {
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}	
+
+		this.computeScore = function() {
+
+			this.refreshScoresFeedbacks();
+		}
+
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.E4VAHIU7JSiGBZIKqqOCyi_Asol_form;
+		switch(this.fCurSeq) {
+
+	case "" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+			return "";
+
+	return null;
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+		var vScoreNode = sc$("E4VAHIU7JSiGBZIKqqOCyi_Asol_SN47");
+
+		var vStep = 1;
+		var vScore = Math.round(this.fScorePts / vStep);
+		function scoreStr(pVal){
+			return new Number(pVal).toFixed(0);
+		}
+if(vScore <= 0 && true) {
+			vScoreNode.innerHTML = "Votre réponse est incorrecte."+"";
+			vScoreNode.className = "answWorst";
+		} else if(true) {
+			vScoreNode.innerHTML = "Votre réponse est juste."+"";
+			vScoreNode.className = "answBest";
+		} else  {
+			vScoreNode.innerHTML = "";
+			vScoreNode.className = "";
+		}
+
+	},
+	solIsShown : false,
+	setSolution : function(pShown){
+		var vTR = document.forms.E4VAHIU7JSiGBZIKqqOCyi_Asol_form.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		vTR = vTR.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		if(vTR.nodeName.toLowerCase()=="tbody") vTR = vTR.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		if(!pShown && this.solIsShown) {
+			while(vTR) {
+				if(vTR.nodeName.toLowerCase()=="tr") {
+					var vOffs = vTR.className.indexOf("assmntSol");
+					if(vOffs>=0) vTR.className = vTR.className.substring(0, vOffs) + vTR.className.substring(vOffs+14);
+				}
+				vTR = vTR.nextSibling;
+			}
+		} else if(pShown && ! this.solIsShown) {
+
+			var vIdx = 0;
+			while(vTR) {
+				if(vTR.nodeName.toLowerCase()=="tr") {
+					vIdx++;
+					vTR.className = ( vIdx == 3 ? "assmntSolRight " : "assmntSolWrong ") + vTR.className;
+				}
+				vTR = vTR.nextSibling;
+			}
+
+		}
+		this.solIsShown = pShown;
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("E4VAHIU7JSiGBZIKqqOCyi_Asol_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = E4VAHIU7JSiGBZIKqqOCyi_Asol;
+scOnUnloads[scOnUnloads.length] = E4VAHIU7JSiGBZIKqqOCyi_Asol;
+</script><div id="E4VAHIU7JSiGBZIKqqOCyi_Asol_A" style="display:none;"><div class="evalSol"><div id="E4VAHIU7JSiGBZIKqqOCyi_Asol_N_quest" class="question"><h1 class="question_ti"><span>&Eacute;nonc&eacute;</span></h1><div id="E4VAHIU7JSiGBZIKqqOCyi_Asol_N_question" class="question_co"><div><p class="op_txt_p">5/10 Google Chrome est&nbsp;: </p></div></div></div><div class="score"><h1 class="score_ti"><span>R&eacute;sultat</span></h1><div class="score_co"><div class="scoreEval " aria-live="polite"><div id="E4VAHIU7JSiGBZIKqqOCyi_Asol_SN47"><span></span></div></div></div></div><div class="sol"><h1 class="sol_ti"><span>Correction</span></h1><div class="sol_co"><form action name="E4VAHIU7JSiGBZIKqqOCyi_Asol_form" id="E4VAHIU7JSiGBZIKqqOCyi_Asol_form"><table class="choiceList "><tr class="choiceList_ch "><td class="choiceList_in "><input type="radio" name="E4VAHIU7JSiGBZIKqqOCyi_Asol_radio" id="E4VAHIU7JSiGBZIKqqOCyi_Asol_0" value="0" onclick="E4VAHIU7JSiGBZIKqqOCyi_Asol.setResp(this, 0);"></td><td class="choiceList_la "><div id="E4VAHIU7JSiGBZIKqqOCyi_Asol_N0_choice" class="choice"><div id="E4VAHIU7JSiGBZIKqqOCyi_Asol_N0_label" class="label"><p class="op_txt_p">Un moteur de recherche</p></div></div></td></tr><tr class="choiceList_ch "><td class="choiceList_in "><input type="radio" name="E4VAHIU7JSiGBZIKqqOCyi_Asol_radio" id="E4VAHIU7JSiGBZIKqqOCyi_Asol_1" value="1" onclick="E4VAHIU7JSiGBZIKqqOCyi_Asol.setResp(this, 1);"></td><td class="choiceList_la "><div id="E4VAHIU7JSiGBZIKqqOCyi_Asol_N1_choice" class="choice"><div id="E4VAHIU7JSiGBZIKqqOCyi_Asol_N1_label" class="label"><p class="op_txt_p">Un syst&egrave;me d'exploitation</p></div></div></td></tr><tr class="choiceList_ch "><td class="choiceList_in "><input type="radio" name="E4VAHIU7JSiGBZIKqqOCyi_Asol_radio" id="E4VAHIU7JSiGBZIKqqOCyi_Asol_2" value="2" onclick="E4VAHIU7JSiGBZIKqqOCyi_Asol.setResp(this, 2);"></td><td class="choiceList_la "><div id="E4VAHIU7JSiGBZIKqqOCyi_Asol_N2_choice" class="choice"><div id="E4VAHIU7JSiGBZIKqqOCyi_Asol_N2_label" class="label"><p class="op_txt_p">Un navigateur</p></div></div></td></tr><tr class="choiceList_ch "><td class="choiceList_in "><input type="radio" name="E4VAHIU7JSiGBZIKqqOCyi_Asol_radio" id="E4VAHIU7JSiGBZIKqqOCyi_Asol_3" value="3" onclick="E4VAHIU7JSiGBZIKqqOCyi_Asol.setResp(this, 3);"></td><td class="choiceList_la "><div id="E4VAHIU7JSiGBZIKqqOCyi_Asol_N3_choice" class="choice"><div id="E4VAHIU7JSiGBZIKqqOCyi_Asol_N3_label" class="label"><p class="op_txt_p">Un plug-in</p></div></div></td></tr><tr class="choiceList_ch "><td class="choiceList_in "><input type="radio" name="E4VAHIU7JSiGBZIKqqOCyi_Asol_radio" id="E4VAHIU7JSiGBZIKqqOCyi_Asol_4" value="4" onclick="E4VAHIU7JSiGBZIKqqOCyi_Asol.setResp(this, 4);"></td><td class="choiceList_la "><div id="E4VAHIU7JSiGBZIKqqOCyi_Asol_N4_choice" class="choice"><div id="E4VAHIU7JSiGBZIKqqOCyi_Asol_N4_label" class="label"><p class="op_txt_p">Je ne sais pas</p></div></div></td></tr></table></form></div></div></div></div></div></div><div class="subQuiz "><h2 class="subQuiz_ti"><span>Exercice</span></h2><div class="subQuiz_co "><script type="text/JavaScript">
+var kgAPVBdyErkuAKoDn7Ln4g_Asol = {
+
+	fId : "kgAPVBdyErkuAKoDn7Ln4g",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+case "" : {
+		var vForm = document.forms.kgAPVBdyErkuAKoDn7Ln4g_Asol_form;
+		for (var i=0; i < vForm.length; i++) {
+			vForm.elements[i].disabled = true;
+			vForm.elements[i].checked = false;
+		}
+
+var vLoadRespSession = "eval";
+var vResp = scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, "choice");
+		if(vResp != null) sc$("kgAPVBdyErkuAKoDn7Ln4g_Asol_"+vResp).checked = true;
+var vLoadScoreSession = "eval";
+		this.fMinPts = scServices.assmntMgr.getMinPts(this.fId, vLoadScoreSession);
+		this.fScorePts = scServices.assmntMgr.getScorePts(this.fId, vLoadScoreSession);
+		this.fMaxPts = scServices.assmntMgr.getMaxPts(this.fId, vLoadScoreSession);
+
+		this.setSolution(true);
+scAssmntMgr.setMode(sc$("kgAPVBdyErkuAKoDn7Ln4g_Asol_N_quest"), "visible");
+scAssmntMgr.setMode(sc$("kgAPVBdyErkuAKoDn7Ln4g_Asol_N_question"), "visible");
+scAssmntMgr.setMode(sc$("kgAPVBdyErkuAKoDn7Ln4g_Asol_N0_choice"), "visible");
+scAssmntMgr.setMode(sc$("kgAPVBdyErkuAKoDn7Ln4g_Asol_N1_choice"), "visible");
+scAssmntMgr.setMode(sc$("kgAPVBdyErkuAKoDn7Ln4g_Asol_N2_choice"), "visible");
+scAssmntMgr.setMode(sc$("kgAPVBdyErkuAKoDn7Ln4g_Asol_N3_choice"), "visible");
+scAssmntMgr.setMode(sc$("kgAPVBdyErkuAKoDn7Ln4g_Asol_N0_label"), "visible");
+scAssmntMgr.setMode(sc$("kgAPVBdyErkuAKoDn7Ln4g_Asol_N1_label"), "visible");
+scAssmntMgr.setMode(sc$("kgAPVBdyErkuAKoDn7Ln4g_Asol_N2_label"), "visible");
+scAssmntMgr.setMode(sc$("kgAPVBdyErkuAKoDn7Ln4g_Asol_N3_label"), "visible");
+this.setResp = function(pInput, pIdx) {
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}	
+
+		this.computeScore = function() {
+
+			this.refreshScoresFeedbacks();
+		}
+
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.kgAPVBdyErkuAKoDn7Ln4g_Asol_form;
+		switch(this.fCurSeq) {
+
+	case "" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+			return "";
+
+	return null;
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+		var vScoreNode = sc$("kgAPVBdyErkuAKoDn7Ln4g_Asol_SN47");
+
+		var vStep = 1;
+		var vScore = Math.round(this.fScorePts / vStep);
+		function scoreStr(pVal){
+			return new Number(pVal).toFixed(0);
+		}
+if(vScore <= 0 && true) {
+			vScoreNode.innerHTML = "Votre réponse est incorrecte."+"";
+			vScoreNode.className = "answWorst";
+		} else if(true) {
+			vScoreNode.innerHTML = "Votre réponse est juste."+"";
+			vScoreNode.className = "answBest";
+		} else  {
+			vScoreNode.innerHTML = "";
+			vScoreNode.className = "";
+		}
+
+	},
+	solIsShown : false,
+	setSolution : function(pShown){
+		var vTR = document.forms.kgAPVBdyErkuAKoDn7Ln4g_Asol_form.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		vTR = vTR.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		if(vTR.nodeName.toLowerCase()=="tbody") vTR = vTR.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		if(!pShown && this.solIsShown) {
+			while(vTR) {
+				if(vTR.nodeName.toLowerCase()=="tr") {
+					var vOffs = vTR.className.indexOf("assmntSol");
+					if(vOffs>=0) vTR.className = vTR.className.substring(0, vOffs) + vTR.className.substring(vOffs+14);
+				}
+				vTR = vTR.nextSibling;
+			}
+		} else if(pShown && ! this.solIsShown) {
+
+			var vIdx = 0;
+			while(vTR) {
+				if(vTR.nodeName.toLowerCase()=="tr") {
+					vIdx++;
+					vTR.className = ( vIdx == 1 ? "assmntSolRight " : "assmntSolWrong ") + vTR.className;
+				}
+				vTR = vTR.nextSibling;
+			}
+
+		}
+		this.solIsShown = pShown;
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("kgAPVBdyErkuAKoDn7Ln4g_Asol_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = kgAPVBdyErkuAKoDn7Ln4g_Asol;
+scOnUnloads[scOnUnloads.length] = kgAPVBdyErkuAKoDn7Ln4g_Asol;
+</script><div id="kgAPVBdyErkuAKoDn7Ln4g_Asol_A" style="display:none;"><div class="evalSol"><div id="kgAPVBdyErkuAKoDn7Ln4g_Asol_N_quest" class="question"><h1 class="question_ti"><span>&Eacute;nonc&eacute;</span></h1><div id="kgAPVBdyErkuAKoDn7Ln4g_Asol_N_question" class="question_co"><div><p class="op_txt_p">6/10 Lorsque je veux ouvrir un deuxi&egrave;me site internet, comment dois-je proc&eacute;der ?</p></div></div></div><div class="score"><h1 class="score_ti"><span>R&eacute;sultat</span></h1><div class="score_co"><div class="scoreEval " aria-live="polite"><div id="kgAPVBdyErkuAKoDn7Ln4g_Asol_SN47"><span></span></div></div></div></div><div class="sol"><h1 class="sol_ti"><span>Correction</span></h1><div class="sol_co"><form action name="kgAPVBdyErkuAKoDn7Ln4g_Asol_form" id="kgAPVBdyErkuAKoDn7Ln4g_Asol_form"><table class="choiceList "><tr class="choiceList_ch "><td class="choiceList_in "><input type="radio" name="kgAPVBdyErkuAKoDn7Ln4g_Asol_radio" id="kgAPVBdyErkuAKoDn7Ln4g_Asol_0" value="0" onclick="kgAPVBdyErkuAKoDn7Ln4g_Asol.setResp(this, 0);"></td><td class="choiceList_la "><div id="kgAPVBdyErkuAKoDn7Ln4g_Asol_N0_choice" class="choice"><div id="kgAPVBdyErkuAKoDn7Ln4g_Asol_N0_label" class="label"><p class="op_txt_p">Je me sers du syst&egrave;me des Onglets</p></div></div></td></tr><tr class="choiceList_ch "><td class="choiceList_in "><input type="radio" name="kgAPVBdyErkuAKoDn7Ln4g_Asol_radio" id="kgAPVBdyErkuAKoDn7Ln4g_Asol_1" value="1" onclick="kgAPVBdyErkuAKoDn7Ln4g_Asol.setResp(this, 1);"></td><td class="choiceList_la "><div id="kgAPVBdyErkuAKoDn7Ln4g_Asol_N1_choice" class="choice"><div id="kgAPVBdyErkuAKoDn7Ln4g_Asol_N1_label" class="label"><p class="op_txt_p">Je ferme mon navigateur et je le r&eacute;-ouvre</p></div></div></td></tr><tr class="choiceList_ch "><td class="choiceList_in "><input type="radio" name="kgAPVBdyErkuAKoDn7Ln4g_Asol_radio" id="kgAPVBdyErkuAKoDn7Ln4g_Asol_2" value="2" onclick="kgAPVBdyErkuAKoDn7Ln4g_Asol.setResp(this, 2);"></td><td class="choiceList_la "><div id="kgAPVBdyErkuAKoDn7Ln4g_Asol_N2_choice" class="choice"><div id="kgAPVBdyErkuAKoDn7Ln4g_Asol_N2_label" class="label"><p class="op_txt_p">On ne peut pas</p></div></div></td></tr><tr class="choiceList_ch "><td class="choiceList_in "><input type="radio" name="kgAPVBdyErkuAKoDn7Ln4g_Asol_radio" id="kgAPVBdyErkuAKoDn7Ln4g_Asol_3" value="3" onclick="kgAPVBdyErkuAKoDn7Ln4g_Asol.setResp(this, 3);"></td><td class="choiceList_la "><div id="kgAPVBdyErkuAKoDn7Ln4g_Asol_N3_choice" class="choice"><div id="kgAPVBdyErkuAKoDn7Ln4g_Asol_N3_label" class="label"><p class="op_txt_p">Je ne sais pas</p></div></div></td></tr></table></form></div></div></div></div></div></div><div class="subQuiz "><h2 class="subQuiz_ti"><span>Exercice</span></h2><div class="subQuiz_co "><script type="text/JavaScript">
+var kC6pSenSwRi26RGd8M2uhf_Asol = {
+
+	fId : "kC6pSenSwRi26RGd8M2uhf",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+case "" : {
+		var vForm = document.forms.kC6pSenSwRi26RGd8M2uhf_Asol_form;
+		for (var i=0; i < vForm.length; i++) {
+			vForm.elements[i].disabled = true;
+			vForm.elements[i].checked = false;
+		}
+
+var vLoadRespSession = "eval";
+var vResp = scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, "choice");
+		if(vResp != null) sc$("kC6pSenSwRi26RGd8M2uhf_Asol_"+vResp).checked = true;
+var vLoadScoreSession = "eval";
+		this.fMinPts = scServices.assmntMgr.getMinPts(this.fId, vLoadScoreSession);
+		this.fScorePts = scServices.assmntMgr.getScorePts(this.fId, vLoadScoreSession);
+		this.fMaxPts = scServices.assmntMgr.getMaxPts(this.fId, vLoadScoreSession);
+
+		this.setSolution(true);
+scAssmntMgr.setMode(sc$("kC6pSenSwRi26RGd8M2uhf_Asol_N_quest"), "visible");
+scAssmntMgr.setMode(sc$("kC6pSenSwRi26RGd8M2uhf_Asol_N_question"), "visible");
+scAssmntMgr.setMode(sc$("kC6pSenSwRi26RGd8M2uhf_Asol_N0_choice"), "visible");
+scAssmntMgr.setMode(sc$("kC6pSenSwRi26RGd8M2uhf_Asol_N1_choice"), "visible");
+scAssmntMgr.setMode(sc$("kC6pSenSwRi26RGd8M2uhf_Asol_N2_choice"), "visible");
+scAssmntMgr.setMode(sc$("kC6pSenSwRi26RGd8M2uhf_Asol_N3_choice"), "visible");
+scAssmntMgr.setMode(sc$("kC6pSenSwRi26RGd8M2uhf_Asol_N4_choice"), "visible");
+scAssmntMgr.setMode(sc$("kC6pSenSwRi26RGd8M2uhf_Asol_N0_label"), "visible");
+scAssmntMgr.setMode(sc$("kC6pSenSwRi26RGd8M2uhf_Asol_N1_label"), "visible");
+scAssmntMgr.setMode(sc$("kC6pSenSwRi26RGd8M2uhf_Asol_N2_label"), "visible");
+scAssmntMgr.setMode(sc$("kC6pSenSwRi26RGd8M2uhf_Asol_N3_label"), "visible");
+scAssmntMgr.setMode(sc$("kC6pSenSwRi26RGd8M2uhf_Asol_N4_label"), "visible");
+this.setResp = function(pInput, pIdx) {
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}	
+
+		this.computeScore = function() {
+
+			this.refreshScoresFeedbacks();
+		}
+
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.kC6pSenSwRi26RGd8M2uhf_Asol_form;
+		switch(this.fCurSeq) {
+
+	case "" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+			return "";
+
+	return null;
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+		var vScoreNode = sc$("kC6pSenSwRi26RGd8M2uhf_Asol_SN47");
+
+		var vStep = 1;
+		var vScore = Math.round(this.fScorePts / vStep);
+		function scoreStr(pVal){
+			return new Number(pVal).toFixed(0);
+		}
+if(vScore <= 0 && true) {
+			vScoreNode.innerHTML = "Votre réponse est incorrecte."+"";
+			vScoreNode.className = "answWorst";
+		} else if(true) {
+			vScoreNode.innerHTML = "Votre réponse est juste."+"";
+			vScoreNode.className = "answBest";
+		} else  {
+			vScoreNode.innerHTML = "";
+			vScoreNode.className = "";
+		}
+
+	},
+	solIsShown : false,
+	setSolution : function(pShown){
+		var vTR = document.forms.kC6pSenSwRi26RGd8M2uhf_Asol_form.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		vTR = vTR.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		if(vTR.nodeName.toLowerCase()=="tbody") vTR = vTR.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		if(!pShown && this.solIsShown) {
+			while(vTR) {
+				if(vTR.nodeName.toLowerCase()=="tr") {
+					var vOffs = vTR.className.indexOf("assmntSol");
+					if(vOffs>=0) vTR.className = vTR.className.substring(0, vOffs) + vTR.className.substring(vOffs+14);
+				}
+				vTR = vTR.nextSibling;
+			}
+		} else if(pShown && ! this.solIsShown) {
+
+			var vIdx = 0;
+			while(vTR) {
+				if(vTR.nodeName.toLowerCase()=="tr") {
+					vIdx++;
+					vTR.className = ( vIdx == 3 ? "assmntSolRight " : "assmntSolWrong ") + vTR.className;
+				}
+				vTR = vTR.nextSibling;
+			}
+
+		}
+		this.solIsShown = pShown;
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("kC6pSenSwRi26RGd8M2uhf_Asol_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = kC6pSenSwRi26RGd8M2uhf_Asol;
+scOnUnloads[scOnUnloads.length] = kC6pSenSwRi26RGd8M2uhf_Asol;
+</script><div id="kC6pSenSwRi26RGd8M2uhf_Asol_A" style="display:none;"><div class="evalSol"><div id="kC6pSenSwRi26RGd8M2uhf_Asol_N_quest" class="question"><h1 class="question_ti"><span>&Eacute;nonc&eacute;</span></h1><div id="kC6pSenSwRi26RGd8M2uhf_Asol_N_question" class="question_co"><div><p class="op_txt_p">7/10 Quel est le nouveau navigateur  rempla&ccedil;ant Internet Explorer sur Windows 10 ?</p></div></div></div><div class="score"><h1 class="score_ti"><span>R&eacute;sultat</span></h1><div class="score_co"><div class="scoreEval " aria-live="polite"><div id="kC6pSenSwRi26RGd8M2uhf_Asol_SN47"><span></span></div></div></div></div><div class="sol"><h1 class="sol_ti"><span>Correction</span></h1><div class="sol_co"><form action name="kC6pSenSwRi26RGd8M2uhf_Asol_form" id="kC6pSenSwRi26RGd8M2uhf_Asol_form"><table class="choiceList "><tr class="choiceList_ch "><td class="choiceList_in "><input type="radio" name="kC6pSenSwRi26RGd8M2uhf_Asol_radio" id="kC6pSenSwRi26RGd8M2uhf_Asol_0" value="0" onclick="kC6pSenSwRi26RGd8M2uhf_Asol.setResp(this, 0);"></td><td class="choiceList_la "><div id="kC6pSenSwRi26RGd8M2uhf_Asol_N0_choice" class="choice"><div id="kC6pSenSwRi26RGd8M2uhf_Asol_N0_label" class="label"><p class="op_txt_p">Safari</p></div></div></td></tr><tr class="choiceList_ch "><td class="choiceList_in "><input type="radio" name="kC6pSenSwRi26RGd8M2uhf_Asol_radio" id="kC6pSenSwRi26RGd8M2uhf_Asol_1" value="1" onclick="kC6pSenSwRi26RGd8M2uhf_Asol.setResp(this, 1);"></td><td class="choiceList_la "><div id="kC6pSenSwRi26RGd8M2uhf_Asol_N1_choice" class="choice"><div id="kC6pSenSwRi26RGd8M2uhf_Asol_N1_label" class="label"><p class="op_txt_p">Maxthon</p></div></div></td></tr><tr class="choiceList_ch "><td class="choiceList_in "><input type="radio" name="kC6pSenSwRi26RGd8M2uhf_Asol_radio" id="kC6pSenSwRi26RGd8M2uhf_Asol_2" value="2" onclick="kC6pSenSwRi26RGd8M2uhf_Asol.setResp(this, 2);"></td><td class="choiceList_la "><div id="kC6pSenSwRi26RGd8M2uhf_Asol_N2_choice" class="choice"><div id="kC6pSenSwRi26RGd8M2uhf_Asol_N2_label" class="label"><p class="op_txt_p">Edge</p></div></div></td></tr><tr class="choiceList_ch "><td class="choiceList_in "><input type="radio" name="kC6pSenSwRi26RGd8M2uhf_Asol_radio" id="kC6pSenSwRi26RGd8M2uhf_Asol_3" value="3" onclick="kC6pSenSwRi26RGd8M2uhf_Asol.setResp(this, 3);"></td><td class="choiceList_la "><div id="kC6pSenSwRi26RGd8M2uhf_Asol_N3_choice" class="choice"><div id="kC6pSenSwRi26RGd8M2uhf_Asol_N3_label" class="label"><p class="op_txt_p">Netscape</p></div></div></td></tr><tr class="choiceList_ch "><td class="choiceList_in "><input type="radio" name="kC6pSenSwRi26RGd8M2uhf_Asol_radio" id="kC6pSenSwRi26RGd8M2uhf_Asol_4" value="4" onclick="kC6pSenSwRi26RGd8M2uhf_Asol.setResp(this, 4);"></td><td class="choiceList_la "><div id="kC6pSenSwRi26RGd8M2uhf_Asol_N4_choice" class="choice"><div id="kC6pSenSwRi26RGd8M2uhf_Asol_N4_label" class="label"><p class="op_txt_p">Je ne sais pas</p></div></div></td></tr></table></form></div></div></div></div></div></div><div class="subQuiz "><h2 class="subQuiz_ti"><span>Exercice</span></h2><div class="subQuiz_co "><script type="text/JavaScript">
+var thPVI25zgrhBHofe4T7M2h_Asol = {
+
+	fId : "thPVI25zgrhBHofe4T7M2h",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+case "" : {
+		var vForm = document.forms.thPVI25zgrhBHofe4T7M2h_Asol_form;
+		for (var i=0; i < vForm.length; i++) {
+			vForm.elements[i].disabled = true;
+			vForm.elements[i].checked = false;
+		}
+
+var vLoadRespSession = "eval";
+var vResp = scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, "choice");
+		if(vResp != null) sc$("thPVI25zgrhBHofe4T7M2h_Asol_"+vResp).checked = true;
+var vLoadScoreSession = "eval";
+		this.fMinPts = scServices.assmntMgr.getMinPts(this.fId, vLoadScoreSession);
+		this.fScorePts = scServices.assmntMgr.getScorePts(this.fId, vLoadScoreSession);
+		this.fMaxPts = scServices.assmntMgr.getMaxPts(this.fId, vLoadScoreSession);
+
+		this.setSolution(true);
+scAssmntMgr.setMode(sc$("thPVI25zgrhBHofe4T7M2h_Asol_N_quest"), "visible");
+scAssmntMgr.setMode(sc$("thPVI25zgrhBHofe4T7M2h_Asol_N_question"), "visible");
+scAssmntMgr.setMode(sc$("thPVI25zgrhBHofe4T7M2h_Asol_N0_choice"), "visible");
+scAssmntMgr.setMode(sc$("thPVI25zgrhBHofe4T7M2h_Asol_N1_choice"), "visible");
+scAssmntMgr.setMode(sc$("thPVI25zgrhBHofe4T7M2h_Asol_N2_choice"), "visible");
+scAssmntMgr.setMode(sc$("thPVI25zgrhBHofe4T7M2h_Asol_N3_choice"), "visible");
+scAssmntMgr.setMode(sc$("thPVI25zgrhBHofe4T7M2h_Asol_N4_choice"), "visible");
+scAssmntMgr.setMode(sc$("thPVI25zgrhBHofe4T7M2h_Asol_N0_label"), "visible");
+scAssmntMgr.setMode(sc$("thPVI25zgrhBHofe4T7M2h_Asol_N1_label"), "visible");
+scAssmntMgr.setMode(sc$("thPVI25zgrhBHofe4T7M2h_Asol_N2_label"), "visible");
+scAssmntMgr.setMode(sc$("thPVI25zgrhBHofe4T7M2h_Asol_N3_label"), "visible");
+scAssmntMgr.setMode(sc$("thPVI25zgrhBHofe4T7M2h_Asol_N4_label"), "visible");
+this.setResp = function(pInput, pIdx) {
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}	
+
+		this.computeScore = function() {
+
+			this.refreshScoresFeedbacks();
+		}
+
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.thPVI25zgrhBHofe4T7M2h_Asol_form;
+		switch(this.fCurSeq) {
+
+	case "" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+			return "";
+
+	return null;
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+		var vScoreNode = sc$("thPVI25zgrhBHofe4T7M2h_Asol_SN47");
+
+		var vStep = 1;
+		var vScore = Math.round(this.fScorePts / vStep);
+		function scoreStr(pVal){
+			return new Number(pVal).toFixed(0);
+		}
+if(vScore <= 0 && true) {
+			vScoreNode.innerHTML = "Votre réponse est incorrecte."+"";
+			vScoreNode.className = "answWorst";
+		} else if(true) {
+			vScoreNode.innerHTML = "Votre réponse est juste."+"";
+			vScoreNode.className = "answBest";
+		} else  {
+			vScoreNode.innerHTML = "";
+			vScoreNode.className = "";
+		}
+
+	},
+	solIsShown : false,
+	setSolution : function(pShown){
+		var vTR = document.forms.thPVI25zgrhBHofe4T7M2h_Asol_form.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		vTR = vTR.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		if(vTR.nodeName.toLowerCase()=="tbody") vTR = vTR.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		if(!pShown && this.solIsShown) {
+			while(vTR) {
+				if(vTR.nodeName.toLowerCase()=="tr") {
+					var vOffs = vTR.className.indexOf("assmntSol");
+					if(vOffs>=0) vTR.className = vTR.className.substring(0, vOffs) + vTR.className.substring(vOffs+14);
+				}
+				vTR = vTR.nextSibling;
+			}
+		} else if(pShown && ! this.solIsShown) {
+
+			var vIdx = 0;
+			while(vTR) {
+				if(vTR.nodeName.toLowerCase()=="tr") {
+					vIdx++;
+					vTR.className = ( vIdx == 3 ? "assmntSolRight " : "assmntSolWrong ") + vTR.className;
+				}
+				vTR = vTR.nextSibling;
+			}
+
+		}
+		this.solIsShown = pShown;
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("thPVI25zgrhBHofe4T7M2h_Asol_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = thPVI25zgrhBHofe4T7M2h_Asol;
+scOnUnloads[scOnUnloads.length] = thPVI25zgrhBHofe4T7M2h_Asol;
+</script><div id="thPVI25zgrhBHofe4T7M2h_Asol_A" style="display:none;"><div class="evalSol"><div id="thPVI25zgrhBHofe4T7M2h_Asol_N_quest" class="question"><h1 class="question_ti"><span>&Eacute;nonc&eacute;</span></h1><div id="thPVI25zgrhBHofe4T7M2h_Asol_N_question" class="question_co"><div><p class="op_txt_p">8/10 Quel est le nom donn&eacute; au stockage temporaire utilis&eacute;e par un navigateur de Web pour mettre en m&eacute;moire les pages Web r&eacute;cemment charg&eacute;es&nbsp;?</p></div></div></div><div class="score"><h1 class="score_ti"><span>R&eacute;sultat</span></h1><div class="score_co"><div class="scoreEval " aria-live="polite"><div id="thPVI25zgrhBHofe4T7M2h_Asol_SN47"><span></span></div></div></div></div><div class="sol"><h1 class="sol_ti"><span>Correction</span></h1><div class="sol_co"><form action name="thPVI25zgrhBHofe4T7M2h_Asol_form" id="thPVI25zgrhBHofe4T7M2h_Asol_form"><table class="choiceList "><tr class="choiceList_ch "><td class="choiceList_in "><input type="radio" name="thPVI25zgrhBHofe4T7M2h_Asol_radio" id="thPVI25zgrhBHofe4T7M2h_Asol_0" value="0" onclick="thPVI25zgrhBHofe4T7M2h_Asol.setResp(this, 0);"></td><td class="choiceList_la "><div id="thPVI25zgrhBHofe4T7M2h_Asol_N0_choice" class="choice"><div id="thPVI25zgrhBHofe4T7M2h_Asol_N0_label" class="label"><p class="op_txt_p">Niche</p></div></div></td></tr><tr class="choiceList_ch "><td class="choiceList_in "><input type="radio" name="thPVI25zgrhBHofe4T7M2h_Asol_radio" id="thPVI25zgrhBHofe4T7M2h_Asol_1" value="1" onclick="thPVI25zgrhBHofe4T7M2h_Asol.setResp(this, 1);"></td><td class="choiceList_la "><div id="thPVI25zgrhBHofe4T7M2h_Asol_N1_choice" class="choice"><div id="thPVI25zgrhBHofe4T7M2h_Asol_N1_label" class="label"><p class="op_txt_p">Cellar</p></div></div></td></tr><tr class="choiceList_ch "><td class="choiceList_in "><input type="radio" name="thPVI25zgrhBHofe4T7M2h_Asol_radio" id="thPVI25zgrhBHofe4T7M2h_Asol_2" value="2" onclick="thPVI25zgrhBHofe4T7M2h_Asol.setResp(this, 2);"></td><td class="choiceList_la "><div id="thPVI25zgrhBHofe4T7M2h_Asol_N2_choice" class="choice"><div id="thPVI25zgrhBHofe4T7M2h_Asol_N2_label" class="label"><p class="op_txt_p">Cache</p></div></div></td></tr><tr class="choiceList_ch "><td class="choiceList_in "><input type="radio" name="thPVI25zgrhBHofe4T7M2h_Asol_radio" id="thPVI25zgrhBHofe4T7M2h_Asol_3" value="3" onclick="thPVI25zgrhBHofe4T7M2h_Asol.setResp(this, 3);"></td><td class="choiceList_la "><div id="thPVI25zgrhBHofe4T7M2h_Asol_N3_choice" class="choice"><div id="thPVI25zgrhBHofe4T7M2h_Asol_N3_label" class="label"><p class="op_txt_p">Webspace</p></div></div></td></tr><tr class="choiceList_ch "><td class="choiceList_in "><input type="radio" name="thPVI25zgrhBHofe4T7M2h_Asol_radio" id="thPVI25zgrhBHofe4T7M2h_Asol_4" value="4" onclick="thPVI25zgrhBHofe4T7M2h_Asol.setResp(this, 4);"></td><td class="choiceList_la "><div id="thPVI25zgrhBHofe4T7M2h_Asol_N4_choice" class="choice"><div id="thPVI25zgrhBHofe4T7M2h_Asol_N4_label" class="label"><p class="op_txt_p">Je ne sais pas</p></div></div></td></tr></table></form></div></div></div></div></div></div><div class="subQuiz "><h2 class="subQuiz_ti"><span>Exercice</span></h2><div class="subQuiz_co "><script type="text/JavaScript">
+var J93VGSxxVFk24WdaO9yezb_Asol = {
+
+	fId : "J93VGSxxVFk24WdaO9yezb",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+case "" : {
+		var vForm = document.forms.J93VGSxxVFk24WdaO9yezb_Asol_form;
+		for (var i=0; i < vForm.length; i++) {
+			vForm.elements[i].disabled = true;
+			vForm.elements[i].checked = false;
+		}
+
+var vLoadRespSession = "eval";
+var vResp = scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, "choice");
+		if(vResp != null) sc$("J93VGSxxVFk24WdaO9yezb_Asol_"+vResp).checked = true;
+var vLoadScoreSession = "eval";
+		this.fMinPts = scServices.assmntMgr.getMinPts(this.fId, vLoadScoreSession);
+		this.fScorePts = scServices.assmntMgr.getScorePts(this.fId, vLoadScoreSession);
+		this.fMaxPts = scServices.assmntMgr.getMaxPts(this.fId, vLoadScoreSession);
+
+		this.setSolution(true);
+scAssmntMgr.setMode(sc$("J93VGSxxVFk24WdaO9yezb_Asol_N_quest"), "visible");
+scAssmntMgr.setMode(sc$("J93VGSxxVFk24WdaO9yezb_Asol_N_question"), "visible");
+scAssmntMgr.setMode(sc$("J93VGSxxVFk24WdaO9yezb_Asol_N0_choice"), "visible");
+scAssmntMgr.setMode(sc$("J93VGSxxVFk24WdaO9yezb_Asol_N1_choice"), "visible");
+scAssmntMgr.setMode(sc$("J93VGSxxVFk24WdaO9yezb_Asol_N2_choice"), "visible");
+scAssmntMgr.setMode(sc$("J93VGSxxVFk24WdaO9yezb_Asol_N3_choice"), "visible");
+scAssmntMgr.setMode(sc$("J93VGSxxVFk24WdaO9yezb_Asol_N4_choice"), "visible");
+scAssmntMgr.setMode(sc$("J93VGSxxVFk24WdaO9yezb_Asol_N0_label"), "visible");
+scAssmntMgr.setMode(sc$("J93VGSxxVFk24WdaO9yezb_Asol_N1_label"), "visible");
+scAssmntMgr.setMode(sc$("J93VGSxxVFk24WdaO9yezb_Asol_N2_label"), "visible");
+scAssmntMgr.setMode(sc$("J93VGSxxVFk24WdaO9yezb_Asol_N3_label"), "visible");
+scAssmntMgr.setMode(sc$("J93VGSxxVFk24WdaO9yezb_Asol_N4_label"), "visible");
+this.setResp = function(pInput, pIdx) {
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}	
+
+		this.computeScore = function() {
+
+			this.refreshScoresFeedbacks();
+		}
+
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.J93VGSxxVFk24WdaO9yezb_Asol_form;
+		switch(this.fCurSeq) {
+
+	case "" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+			return "";
+
+	return null;
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+		var vScoreNode = sc$("J93VGSxxVFk24WdaO9yezb_Asol_SN47");
+
+		var vStep = 1;
+		var vScore = Math.round(this.fScorePts / vStep);
+		function scoreStr(pVal){
+			return new Number(pVal).toFixed(0);
+		}
+if(vScore <= 0 && true) {
+			vScoreNode.innerHTML = "Votre réponse est incorrecte."+"";
+			vScoreNode.className = "answWorst";
+		} else if(true) {
+			vScoreNode.innerHTML = "Votre réponse est juste."+"";
+			vScoreNode.className = "answBest";
+		} else  {
+			vScoreNode.innerHTML = "";
+			vScoreNode.className = "";
+		}
+
+	},
+	solIsShown : false,
+	setSolution : function(pShown){
+		var vTR = document.forms.J93VGSxxVFk24WdaO9yezb_Asol_form.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		vTR = vTR.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		if(vTR.nodeName.toLowerCase()=="tbody") vTR = vTR.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		if(!pShown && this.solIsShown) {
+			while(vTR) {
+				if(vTR.nodeName.toLowerCase()=="tr") {
+					var vOffs = vTR.className.indexOf("assmntSol");
+					if(vOffs>=0) vTR.className = vTR.className.substring(0, vOffs) + vTR.className.substring(vOffs+14);
+				}
+				vTR = vTR.nextSibling;
+			}
+		} else if(pShown && ! this.solIsShown) {
+
+			var vIdx = 0;
+			while(vTR) {
+				if(vTR.nodeName.toLowerCase()=="tr") {
+					vIdx++;
+					vTR.className = ( vIdx == 2 ? "assmntSolRight " : "assmntSolWrong ") + vTR.className;
+				}
+				vTR = vTR.nextSibling;
+			}
+
+		}
+		this.solIsShown = pShown;
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("J93VGSxxVFk24WdaO9yezb_Asol_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = J93VGSxxVFk24WdaO9yezb_Asol;
+scOnUnloads[scOnUnloads.length] = J93VGSxxVFk24WdaO9yezb_Asol;
+</script><div id="J93VGSxxVFk24WdaO9yezb_Asol_A" style="display:none;"><div class="evalSol"><div id="J93VGSxxVFk24WdaO9yezb_Asol_N_quest" class="question"><h1 class="question_ti"><span>&Eacute;nonc&eacute;</span></h1><div id="J93VGSxxVFk24WdaO9yezb_Asol_N_question" class="question_co"><div><p class="op_txt_p">9/10 Un nom de domaine se terminant par 'org' est&nbsp;: </p></div></div></div><div class="score"><h1 class="score_ti"><span>R&eacute;sultat</span></h1><div class="score_co"><div class="scoreEval " aria-live="polite"><div id="J93VGSxxVFk24WdaO9yezb_Asol_SN47"><span></span></div></div></div></div><div class="sol"><h1 class="sol_ti"><span>Correction</span></h1><div class="sol_co"><form action name="J93VGSxxVFk24WdaO9yezb_Asol_form" id="J93VGSxxVFk24WdaO9yezb_Asol_form"><table class="choiceList "><tr class="choiceList_ch "><td class="choiceList_in "><input type="radio" name="J93VGSxxVFk24WdaO9yezb_Asol_radio" id="J93VGSxxVFk24WdaO9yezb_Asol_0" value="0" onclick="J93VGSxxVFk24WdaO9yezb_Asol.setResp(this, 0);"></td><td class="choiceList_la "><div id="J93VGSxxVFk24WdaO9yezb_Asol_N0_choice" class="choice"><div id="J93VGSxxVFk24WdaO9yezb_Asol_N0_label" class="label"><p class="op_txt_p">un site Web commercial</p></div></div></td></tr><tr class="choiceList_ch "><td class="choiceList_in "><input type="radio" name="J93VGSxxVFk24WdaO9yezb_Asol_radio" id="J93VGSxxVFk24WdaO9yezb_Asol_1" value="1" onclick="J93VGSxxVFk24WdaO9yezb_Asol.setResp(this, 1);"></td><td class="choiceList_la "><div id="J93VGSxxVFk24WdaO9yezb_Asol_N1_choice" class="choice"><div id="J93VGSxxVFk24WdaO9yezb_Asol_N1_label" class="label"><p class="op_txt_p">une organisation</p></div></div></td></tr><tr class="choiceList_ch "><td class="choiceList_in "><input type="radio" name="J93VGSxxVFk24WdaO9yezb_Asol_radio" id="J93VGSxxVFk24WdaO9yezb_Asol_2" value="2" onclick="J93VGSxxVFk24WdaO9yezb_Asol.setResp(this, 2);"></td><td class="choiceList_la "><div id="J93VGSxxVFk24WdaO9yezb_Asol_N2_choice" class="choice"><div id="J93VGSxxVFk24WdaO9yezb_Asol_N2_label" class="label"><p class="op_txt_p">un site de r&eacute;seau social</p></div></div></td></tr><tr class="choiceList_ch "><td class="choiceList_in "><input type="radio" name="J93VGSxxVFk24WdaO9yezb_Asol_radio" id="J93VGSxxVFk24WdaO9yezb_Asol_3" value="3" onclick="J93VGSxxVFk24WdaO9yezb_Asol.setResp(this, 3);"></td><td class="choiceList_la "><div id="J93VGSxxVFk24WdaO9yezb_Asol_N3_choice" class="choice"><div id="J93VGSxxVFk24WdaO9yezb_Asol_N3_label" class="label"><p class="op_txt_p">un site qui a un trafic tr&egrave;s &eacute;lev&eacute;</p></div></div></td></tr><tr class="choiceList_ch "><td class="choiceList_in "><input type="radio" name="J93VGSxxVFk24WdaO9yezb_Asol_radio" id="J93VGSxxVFk24WdaO9yezb_Asol_4" value="4" onclick="J93VGSxxVFk24WdaO9yezb_Asol.setResp(this, 4);"></td><td class="choiceList_la "><div id="J93VGSxxVFk24WdaO9yezb_Asol_N4_choice" class="choice"><div id="J93VGSxxVFk24WdaO9yezb_Asol_N4_label" class="label"><p class="op_txt_p">Je ne sais pas</p></div></div></td></tr></table></form></div></div></div></div></div></div><div class="subQuiz "><h2 class="subQuiz_ti"><span>Exercice</span></h2><div class="subQuiz_co "><script type="text/JavaScript">
+var nVjkm6rjKkdSsMkOXJfhGh_Asol = {
+
+	fId : "nVjkm6rjKkdSsMkOXJfhGh",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+case "" : {
+		var vForm = document.forms.nVjkm6rjKkdSsMkOXJfhGh_Asol_form;
+		for (var i=0; i < vForm.length; i++) {
+			vForm.elements[i].disabled = true;
+			vForm.elements[i].checked = false;
+		}
+
+var vLoadRespSession = "eval";
+var vResp = scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, "choice");
+		if(vResp != null) sc$("nVjkm6rjKkdSsMkOXJfhGh_Asol_"+vResp).checked = true;
+var vLoadScoreSession = "eval";
+		this.fMinPts = scServices.assmntMgr.getMinPts(this.fId, vLoadScoreSession);
+		this.fScorePts = scServices.assmntMgr.getScorePts(this.fId, vLoadScoreSession);
+		this.fMaxPts = scServices.assmntMgr.getMaxPts(this.fId, vLoadScoreSession);
+
+		this.setSolution(true);
+scAssmntMgr.setMode(sc$("nVjkm6rjKkdSsMkOXJfhGh_Asol_N_quest"), "visible");
+scAssmntMgr.setMode(sc$("nVjkm6rjKkdSsMkOXJfhGh_Asol_N_question"), "visible");
+scAssmntMgr.setMode(sc$("nVjkm6rjKkdSsMkOXJfhGh_Asol_N0_choice"), "visible");
+scAssmntMgr.setMode(sc$("nVjkm6rjKkdSsMkOXJfhGh_Asol_N1_choice"), "visible");
+scAssmntMgr.setMode(sc$("nVjkm6rjKkdSsMkOXJfhGh_Asol_N2_choice"), "visible");
+scAssmntMgr.setMode(sc$("nVjkm6rjKkdSsMkOXJfhGh_Asol_N3_choice"), "visible");
+scAssmntMgr.setMode(sc$("nVjkm6rjKkdSsMkOXJfhGh_Asol_N0_label"), "visible");
+scAssmntMgr.setMode(sc$("nVjkm6rjKkdSsMkOXJfhGh_Asol_N1_label"), "visible");
+scAssmntMgr.setMode(sc$("nVjkm6rjKkdSsMkOXJfhGh_Asol_N2_label"), "visible");
+scAssmntMgr.setMode(sc$("nVjkm6rjKkdSsMkOXJfhGh_Asol_N3_label"), "visible");
+this.setResp = function(pInput, pIdx) {
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}	
+
+		this.computeScore = function() {
+
+			this.refreshScoresFeedbacks();
+		}
+
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.nVjkm6rjKkdSsMkOXJfhGh_Asol_form;
+		switch(this.fCurSeq) {
+
+	case "" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+			return "";
+
+	return null;
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+		var vScoreNode = sc$("nVjkm6rjKkdSsMkOXJfhGh_Asol_SN47");
+
+		var vStep = 1;
+		var vScore = Math.round(this.fScorePts / vStep);
+		function scoreStr(pVal){
+			return new Number(pVal).toFixed(0);
+		}
+if(vScore <= 0 && true) {
+			vScoreNode.innerHTML = "Votre réponse est incorrecte."+"";
+			vScoreNode.className = "answWorst";
+		} else if(true) {
+			vScoreNode.innerHTML = "Votre réponse est juste."+"";
+			vScoreNode.className = "answBest";
+		} else  {
+			vScoreNode.innerHTML = "";
+			vScoreNode.className = "";
+		}
+
+	},
+	solIsShown : false,
+	setSolution : function(pShown){
+		var vTR = document.forms.nVjkm6rjKkdSsMkOXJfhGh_Asol_form.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		vTR = vTR.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		if(vTR.nodeName.toLowerCase()=="tbody") vTR = vTR.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		if(!pShown && this.solIsShown) {
+			while(vTR) {
+				if(vTR.nodeName.toLowerCase()=="tr") {
+					var vOffs = vTR.className.indexOf("assmntSol");
+					if(vOffs>=0) vTR.className = vTR.className.substring(0, vOffs) + vTR.className.substring(vOffs+14);
+				}
+				vTR = vTR.nextSibling;
+			}
+		} else if(pShown && ! this.solIsShown) {
+
+			var vIdx = 0;
+			while(vTR) {
+				if(vTR.nodeName.toLowerCase()=="tr") {
+					vIdx++;
+					vTR.className = ( vIdx == 3 ? "assmntSolRight " : "assmntSolWrong ") + vTR.className;
+				}
+				vTR = vTR.nextSibling;
+			}
+
+		}
+		this.solIsShown = pShown;
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("nVjkm6rjKkdSsMkOXJfhGh_Asol_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = nVjkm6rjKkdSsMkOXJfhGh_Asol;
+scOnUnloads[scOnUnloads.length] = nVjkm6rjKkdSsMkOXJfhGh_Asol;
+</script><div id="nVjkm6rjKkdSsMkOXJfhGh_Asol_A" style="display:none;"><div class="evalSol"><div id="nVjkm6rjKkdSsMkOXJfhGh_Asol_N_quest" class="question"><h1 class="question_ti"><span>&Eacute;nonc&eacute;</span></h1><div id="nVjkm6rjKkdSsMkOXJfhGh_Asol_N_question" class="question_co"><div><p class="op_txt_p">10/10 Qu'est-ce qu'un wiki ?</p></div></div></div><div class="score"><h1 class="score_ti"><span>R&eacute;sultat</span></h1><div class="score_co"><div class="scoreEval " aria-live="polite"><div id="nVjkm6rjKkdSsMkOXJfhGh_Asol_SN47"><span></span></div></div></div></div><div class="sol"><h1 class="sol_ti"><span>Correction</span></h1><div class="sol_co"><form action name="nVjkm6rjKkdSsMkOXJfhGh_Asol_form" id="nVjkm6rjKkdSsMkOXJfhGh_Asol_form"><table class="choiceList "><tr class="choiceList_ch "><td class="choiceList_in "><input type="radio" name="nVjkm6rjKkdSsMkOXJfhGh_Asol_radio" id="nVjkm6rjKkdSsMkOXJfhGh_Asol_0" value="0" onclick="nVjkm6rjKkdSsMkOXJfhGh_Asol.setResp(this, 0);"></td><td class="choiceList_la "><div id="nVjkm6rjKkdSsMkOXJfhGh_Asol_N0_choice" class="choice"><div id="nVjkm6rjKkdSsMkOXJfhGh_Asol_N0_label" class="label"><p class="op_txt_p">Un soldat Hawa&iuml;en</p></div></div></td></tr><tr class="choiceList_ch "><td class="choiceList_in "><input type="radio" name="nVjkm6rjKkdSsMkOXJfhGh_Asol_radio" id="nVjkm6rjKkdSsMkOXJfhGh_Asol_1" value="1" onclick="nVjkm6rjKkdSsMkOXJfhGh_Asol.setResp(this, 1);"></td><td class="choiceList_la "><div id="nVjkm6rjKkdSsMkOXJfhGh_Asol_N1_choice" class="choice"><div id="nVjkm6rjKkdSsMkOXJfhGh_Asol_N1_label" class="label"><p class="op_txt_p">Une encyclop&eacute;die</p></div></div></td></tr><tr class="choiceList_ch "><td class="choiceList_in "><input type="radio" name="nVjkm6rjKkdSsMkOXJfhGh_Asol_radio" id="nVjkm6rjKkdSsMkOXJfhGh_Asol_2" value="2" onclick="nVjkm6rjKkdSsMkOXJfhGh_Asol.setResp(this, 2);"></td><td class="choiceList_la "><div id="nVjkm6rjKkdSsMkOXJfhGh_Asol_N2_choice" class="choice"><div id="nVjkm6rjKkdSsMkOXJfhGh_Asol_N2_label" class="label"><p class="op_txt_p">Un site web en &eacute;criture collaborative</p></div></div></td></tr><tr class="choiceList_ch "><td class="choiceList_in "><input type="radio" name="nVjkm6rjKkdSsMkOXJfhGh_Asol_radio" id="nVjkm6rjKkdSsMkOXJfhGh_Asol_3" value="3" onclick="nVjkm6rjKkdSsMkOXJfhGh_Asol.setResp(this, 3);"></td><td class="choiceList_la "><div id="nVjkm6rjKkdSsMkOXJfhGh_Asol_N3_choice" class="choice"><div id="nVjkm6rjKkdSsMkOXJfhGh_Asol_N3_label" class="label"><p class="op_txt_p">Je ne sais pas</p></div></div></td></tr></table></form></div></div></div></div></div></div></div></div></div></div></div></div></div></div><div id="evalPlayerBar"><div id="evalPlayerBarFra1"><div id="evalPlayerBarFra2"><div id="evalPlayerBarFra3"><div class="evalCounter "><div class="evalCounterSeen">1</div><div class="evalCounterOver">/</div><div class="evalCounterTotal">1</div></div><a href="autoeval_navigateur_3.html" target="_self" class="prevEval btnPrv" title="Pr&eacute;c&eacute;dent"><span>Pr&eacute;c&eacute;dent</span></a><a href="autoeval_navigateur_6.html" target="_self" class="nextEval btnNxt" title="Suivant"><span>Suivant</span></a></div></div></div></div><div id="evalPlayerPrint"><a href="#" onclick="window.print();return false;" class="printEval" title="Imprimer la page"><span>Imprimer</span></a></div></div>
+  <script type="text/JavaScript" src="../skin/js/skin.js"></script>
+  <script type="text/javascript">tplMgr.init();scCodeMgr.init();scImgMgr.init();new scSiRuleAutoMarginW("tplCoMarginW",(tplMgr.fScreenTouch?"ide:tplCo":"bod:"),true,450,100);new scSiRuleFlexH("tplCoFlexTop",(tplMgr.fScreenTouch?"ide:tplCo":"bod:"),true,.3);</script>
+ </body>
+</html>

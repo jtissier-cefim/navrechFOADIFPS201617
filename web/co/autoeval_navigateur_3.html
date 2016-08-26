@@ -1,0 +1,1476 @@
+<!DOCTYPE html>
+<html lang="fr">
+ <head>
+  <title>Internet un outil collaboratif, navigateurs et moteurs de recherche - R&eacute;sultats du test</title>
+  <meta charset="UTF-8">
+  <meta name="template" content="eval">
+  <meta name="author" content="J.Tissier ">
+  <meta name="keywords" content>
+  <meta name="date" content="20/07/2016">
+  <script type="text/JavaScript">
+/*0*/ var scServices = {};
+/*1*/ scServices["scLoad"] = {loadFromRoot:function(pUrl){window.location.href="../"+pUrl;}, getPathFromRoot:function(pPath){return "../"+pPath;}, getUrlFromRoot:function(pHref){if(!this.fRootOffset) this.fRootOffset = scCoLib.hrefBase().length-29; return pHref.substring(this.fRootOffset);},getRootUrl:function(){if(!this.fRootUrl) this.fRootUrl = scCoLib.hrefBase().substring(0,scCoLib.hrefBase().length-30); return this.fRootUrl;}};
+</script>
+  <!--[if lt IE 9]><script type="text/JavaScript" src="../wdgt/html5shiv/html5shiv.js"></script><![endif]--><script type="text/JavaScript" src="../lib-sm/scCoLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sm/scPaLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sm/scSiLib.js"></script>
+  <script type="text/JavaScript" src="../lib-sm/scDynUiMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sm/scTooltipMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sm/scMapMgr.js"></script>
+  <script type="text/JavaScript" src="../svc/scorm.js"></script>
+  <script type="text/JavaScript" src="../lib-sm/scDragMgr.js"></script>
+  <script type="text/JavaScript" src="../lib-sma/scAssmntMgr.js"></script>
+  <script type="text/JavaScript" src="../svc/scSearch/scSearch.js"></script>
+  <script type="text/JavaScript" src="../wdgt/tplMgr/tplMgr.js"></script>
+  <script type="text/JavaScript" src="../wdgt/dynSizes/dynSizes.js"></script>
+  <script type="text/JavaScript">
+/*0*/ try{var vCurrDir = scCoLib.hrefBase().substring(0,scCoLib.hrefBase().lastIndexOf("/")+1); if(window.opener && window.opener.location.href.lastIndexOf(vCurrDir, vCurrDir.length)==0 && window.opener.scServices) scServices = window.opener.scServices; else if(window.parent && window.parent.location.href.lastIndexOf(vCurrDir, vCurrDir.length)==0 && window.parent.scServices) scServices = window.parent.scServices;}catch(e){}
+</script>
+  <meta name="generator" content="SCENARI 4.1.10 / Opale 3.5.014 - http://scenari-platform.org/opale">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="revision" content="2016-08-26 08:06">
+  <link rel="start" href="Exports_InternetCollaboratifNavigation.html" title="Internet un outil collaboratif, navigateurs et moteurs de recherche">
+  <script type="text/javascript">try{
+	if(window.frameElement.setSubWindowTitle) window.frameElement.setSubWindowTitle(document.title);
+}catch(e){}
+</script>
+  <script type="text/javascript"> scSiLib.getContentHeight = function(pContainer) {
+ var vCh = pContainer.lastChild;
+ var vH = 0;
+ while(vCh && ( vCh.nodeType != 1 || ! (vH = vCh.offsetHeight) || vCh.style.position=="absolute") ) vCh = vCh.previousSibling;
+ if(vCh) {
+  return vCh.offsetTop + vH;
+ }
+ return Number.NaN;
+}</script>
+  <link type="text/css" rel="stylesheet" href="../skin/css/html.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/struct_eval.css" media="screen">
+  <link type="text/css" rel="stylesheet" href="../skin/css/buttons.css" media="screen">
+  <link type="text/css" rel="stylesheet" href="../skin/css/transf.css" media="all">
+  <link type="text/css" rel="stylesheet" href="../skin/css/assmnt.css">
+  <link type="text/css" rel="stylesheet" href="../skin/css/assmnt_eval.css">
+  <!--[if IE]><link type="text/css" rel="stylesheet" href="../skin/css/ie.css" media="screen"/><![endif]-->
+  <!--[if lt IE 7]><link type="text/css" rel="stylesheet" href="../skin/css/ie6_eval.css" media="screen"/><![endif]--><link type="text/css" rel="stylesheet" href="../skin/css/print.css" media="print">
+ </head>
+ <body>
+  <div id="tplFra"><div id="tplCo"><div id="evalPlayerCo" class="scroller"><div id="tplCoMarginW"><div id="tplCoFlexTop"></div><div id="evalPlayerCo2"><script type="text/JavaScript">
+var AQFKnVm3TfbsjobS0N1Vc_Ascore = {
+
+	fId : "AQFKnVm3TfbsjobS0N1Vc",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+
+	case "score" : {
+
+		this.computeScore = function(pInput, pIdx) {
+			this.fMinPts = 0;
+			this.fMaxPts = 0;
+			this.fScorePts = 0;
+			var vRate;
+
+		var vSubAssmnt = {fSession:"eval", compute:function(pParent, pId, pRate){
+			this.fMinPts = scServices.assmntMgr.getMinPts(pId, this.fSession)||0;
+			this.fScorePts = scServices.assmntMgr.getScorePts(pId, this.fSession)||0;
+			this.fMaxPts = scServices.assmntMgr.getMaxPts(pId, this.fSession)||1;
+
+			pParent.fMinPts += this.fMinPts;
+			pParent.fScorePts += this.fScorePts;
+			pParent.fMaxPts += this.fMaxPts;
+		}};
+
+		vSubAssmnt.compute(this, "hVVzsXpLzGcviZxcLuulSh", 1);
+
+		vSubAssmnt.compute(this, "tzwXTLz0OddnrmIpOZ5k1", 1);
+
+		vSubAssmnt.compute(this, "AWefo9pCuGjDiHVyDDYAKf", 1);
+
+		vSubAssmnt.compute(this, "HVx8us7ABtErPfqGnGPFe", 1);
+
+		vSubAssmnt.compute(this, "E4VAHIU7JSiGBZIKqqOCyi", 1);
+
+		vSubAssmnt.compute(this, "kgAPVBdyErkuAKoDn7Ln4g", 1);
+
+		vSubAssmnt.compute(this, "kC6pSenSwRi26RGd8M2uhf", 1);
+
+		vSubAssmnt.compute(this, "thPVI25zgrhBHofe4T7M2h", 1);
+
+		vSubAssmnt.compute(this, "J93VGSxxVFk24WdaO9yezb", 1);
+
+		vSubAssmnt.compute(this, "nVjkm6rjKkdSsMkOXJfhGh", 1);
+
+				this.fScorePts = 0 + (this.fScorePts-this.fMinPts) / (this.fMaxPts-this.fMinPts) * (1 - 0); 
+
+			this.fMinPts = 0;
+
+			this.fMaxPts = 1;
+var vScoreSession = "eval";
+			scServices.assmntMgr.setPts(this.fId, vScoreSession, this.fMinPts, this.fScorePts, this.fMaxPts);
+
+						this.refreshScoresFeedbacks();
+		}
+scServices.assmntMgr.setCompletionStatus(this.fId, "eval", "complete"); 
+
+		this.handleAssmntPts = function(pEvent){if(pEvent.fId=="hVVzsXpLzGcviZxcLuulSh" || pEvent.fId=="tzwXTLz0OddnrmIpOZ5k1" || pEvent.fId=="AWefo9pCuGjDiHVyDDYAKf" || pEvent.fId=="HVx8us7ABtErPfqGnGPFe" || pEvent.fId=="E4VAHIU7JSiGBZIKqqOCyi" || pEvent.fId=="kgAPVBdyErkuAKoDn7Ln4g" || pEvent.fId=="kC6pSenSwRi26RGd8M2uhf" || pEvent.fId=="thPVI25zgrhBHofe4T7M2h" || pEvent.fId=="J93VGSxxVFk24WdaO9yezb" || pEvent.fId=="nVjkm6rjKkdSsMkOXJfhGh" || false) this.computeScore();}
+		scServices.assmntMgr.addEventListener(this);
+		this.computeScore();
+
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.AQFKnVm3TfbsjobS0N1Vc_Ascore_form;
+		switch(this.fCurSeq) {
+
+	case "score" : {
+
+		scServices.assmntMgr.removeEventListener(this);
+		this.computeScore();
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+			return "score";
+
+	return null;
+	},
+
+	
+	refreshScoresFeedbacks : function(){
+
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("AQFKnVm3TfbsjobS0N1Vc_Ascore_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "B",
+	unloadSortKey: "B"
+};
+
+scOnLoads[scOnLoads.length] = AQFKnVm3TfbsjobS0N1Vc_Ascore;
+scOnUnloads[scOnUnloads.length] = AQFKnVm3TfbsjobS0N1Vc_Ascore;
+</script><div id="AQFKnVm3TfbsjobS0N1Vc_Ascore_A" style="display:none;"><script type="text/JavaScript">
+var hVVzsXpLzGcviZxcLuulSh_AscoreSub = {
+
+	fId : "hVVzsXpLzGcviZxcLuulSh",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+case "" : {
+		var vForm = document.forms.hVVzsXpLzGcviZxcLuulSh_AscoreSub_form;
+		for (var i=0; i < vForm.length; i++) {
+			vForm.elements[i].disabled = false;
+			vForm.elements[i].checked = false;
+		}
+
+var vLoadRespSession = "eval";
+var vResp = scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, "choice");
+		if(vResp != null) sc$("hVVzsXpLzGcviZxcLuulSh_AscoreSub_"+vResp).checked = true;
+
+		this.setSolution(false);
+this.setResp = function(pInput, pIdx) {
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}	
+
+		this.computeScore = function() {
+
+		this.fMinPts = 0;
+		this.fMaxPts = 1;
+		this.fScorePts = document.forms.hVVzsXpLzGcviZxcLuulSh_AscoreSub_form.hVVzsXpLzGcviZxcLuulSh_AscoreSub_radio[2].checked ?  this.fMaxPts : this.fMinPts;
+
+		//alert("score:::::"+this.fMinPts+" - "+this.fScorePts+" - "+this.fMaxPts);
+var vScoreSession = "eval";
+		if(this.fScorePts != null) scServices.assmntMgr.setPts(this.fId, vScoreSession, this.fMinPts, this.fScorePts, this.fMaxPts);
+
+			this.refreshScoresFeedbacks();
+		}
+
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.hVVzsXpLzGcviZxcLuulSh_AscoreSub_form;
+		switch(this.fCurSeq) {
+
+	case "" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+			return "";
+
+	return null;
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+	},
+	solIsShown : false,
+	setSolution : function(pShown){
+		var vTR = document.forms.hVVzsXpLzGcviZxcLuulSh_AscoreSub_form.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		vTR = vTR.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		if(vTR.nodeName.toLowerCase()=="tbody") vTR = vTR.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		if(!pShown && this.solIsShown) {
+			while(vTR) {
+				if(vTR.nodeName.toLowerCase()=="tr") {
+					var vOffs = vTR.className.indexOf("assmntSol");
+					if(vOffs>=0) vTR.className = vTR.className.substring(0, vOffs) + vTR.className.substring(vOffs+14);
+				}
+				vTR = vTR.nextSibling;
+			}
+		} else if(pShown && ! this.solIsShown) {
+
+			var vIdx = 0;
+			while(vTR) {
+				if(vTR.nodeName.toLowerCase()=="tr") {
+					vIdx++;
+					vTR.className = ( vIdx == 3 ? "assmntSolRight " : "assmntSolWrong ") + vTR.className;
+				}
+				vTR = vTR.nextSibling;
+			}
+
+		}
+		this.solIsShown = pShown;
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("hVVzsXpLzGcviZxcLuulSh_AscoreSub_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = hVVzsXpLzGcviZxcLuulSh_AscoreSub;
+scOnUnloads[scOnUnloads.length] = hVVzsXpLzGcviZxcLuulSh_AscoreSub;
+</script><div id="hVVzsXpLzGcviZxcLuulSh_AscoreSub_A" style="display:none;"><div style="display: none;"><form action name="hVVzsXpLzGcviZxcLuulSh_AscoreSub_form" id="hVVzsXpLzGcviZxcLuulSh_AscoreSub_form"><table><tr><td><input type="radio" name="hVVzsXpLzGcviZxcLuulSh_AscoreSub_radio" id="hVVzsXpLzGcviZxcLuulSh_AscoreSub_0" value="0" onclick="hVVzsXpLzGcviZxcLuulSh_AscoreSub.setResp(this, 0);"></td><td></td></tr><tr><td><input type="radio" name="hVVzsXpLzGcviZxcLuulSh_AscoreSub_radio" id="hVVzsXpLzGcviZxcLuulSh_AscoreSub_1" value="1" onclick="hVVzsXpLzGcviZxcLuulSh_AscoreSub.setResp(this, 1);"></td><td></td></tr><tr><td><input type="radio" name="hVVzsXpLzGcviZxcLuulSh_AscoreSub_radio" id="hVVzsXpLzGcviZxcLuulSh_AscoreSub_2" value="2" onclick="hVVzsXpLzGcviZxcLuulSh_AscoreSub.setResp(this, 2);"></td><td></td></tr><tr><td><input type="radio" name="hVVzsXpLzGcviZxcLuulSh_AscoreSub_radio" id="hVVzsXpLzGcviZxcLuulSh_AscoreSub_3" value="3" onclick="hVVzsXpLzGcviZxcLuulSh_AscoreSub.setResp(this, 3);"></td><td></td></tr><tr><td><input type="radio" name="hVVzsXpLzGcviZxcLuulSh_AscoreSub_radio" id="hVVzsXpLzGcviZxcLuulSh_AscoreSub_4" value="4" onclick="hVVzsXpLzGcviZxcLuulSh_AscoreSub.setResp(this, 4);"></td><td></td></tr></table></form></div></div><script type="text/JavaScript">
+var tzwXTLz0OddnrmIpOZ5k1_AscoreSub = {
+
+	fId : "tzwXTLz0OddnrmIpOZ5k1",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+case "" : {
+		var vForm = document.forms.tzwXTLz0OddnrmIpOZ5k1_AscoreSub_form;
+		for (var i=0; i < vForm.length; i++) {
+			vForm.elements[i].disabled = false;
+			vForm.elements[i].checked = false;
+		}
+
+var vLoadRespSession = "eval";
+var vResp = scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, "choice");
+		if(vResp != null) sc$("tzwXTLz0OddnrmIpOZ5k1_AscoreSub_"+vResp).checked = true;
+
+		this.setSolution(false);
+this.setResp = function(pInput, pIdx) {
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}	
+
+		this.computeScore = function() {
+
+		this.fMinPts = 0;
+		this.fMaxPts = 1;
+		this.fScorePts = document.forms.tzwXTLz0OddnrmIpOZ5k1_AscoreSub_form.tzwXTLz0OddnrmIpOZ5k1_AscoreSub_radio[0].checked ?  this.fMaxPts : this.fMinPts;
+
+		//alert("score:::::"+this.fMinPts+" - "+this.fScorePts+" - "+this.fMaxPts);
+var vScoreSession = "eval";
+		if(this.fScorePts != null) scServices.assmntMgr.setPts(this.fId, vScoreSession, this.fMinPts, this.fScorePts, this.fMaxPts);
+
+			this.refreshScoresFeedbacks();
+		}
+
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.tzwXTLz0OddnrmIpOZ5k1_AscoreSub_form;
+		switch(this.fCurSeq) {
+
+	case "" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+			return "";
+
+	return null;
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+	},
+	solIsShown : false,
+	setSolution : function(pShown){
+		var vTR = document.forms.tzwXTLz0OddnrmIpOZ5k1_AscoreSub_form.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		vTR = vTR.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		if(vTR.nodeName.toLowerCase()=="tbody") vTR = vTR.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		if(!pShown && this.solIsShown) {
+			while(vTR) {
+				if(vTR.nodeName.toLowerCase()=="tr") {
+					var vOffs = vTR.className.indexOf("assmntSol");
+					if(vOffs>=0) vTR.className = vTR.className.substring(0, vOffs) + vTR.className.substring(vOffs+14);
+				}
+				vTR = vTR.nextSibling;
+			}
+		} else if(pShown && ! this.solIsShown) {
+
+			var vIdx = 0;
+			while(vTR) {
+				if(vTR.nodeName.toLowerCase()=="tr") {
+					vIdx++;
+					vTR.className = ( vIdx == 1 ? "assmntSolRight " : "assmntSolWrong ") + vTR.className;
+				}
+				vTR = vTR.nextSibling;
+			}
+
+		}
+		this.solIsShown = pShown;
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("tzwXTLz0OddnrmIpOZ5k1_AscoreSub_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = tzwXTLz0OddnrmIpOZ5k1_AscoreSub;
+scOnUnloads[scOnUnloads.length] = tzwXTLz0OddnrmIpOZ5k1_AscoreSub;
+</script><div id="tzwXTLz0OddnrmIpOZ5k1_AscoreSub_A" style="display:none;"><div style="display: none;"><form action name="tzwXTLz0OddnrmIpOZ5k1_AscoreSub_form" id="tzwXTLz0OddnrmIpOZ5k1_AscoreSub_form"><table><tr><td><input type="radio" name="tzwXTLz0OddnrmIpOZ5k1_AscoreSub_radio" id="tzwXTLz0OddnrmIpOZ5k1_AscoreSub_0" value="0" onclick="tzwXTLz0OddnrmIpOZ5k1_AscoreSub.setResp(this, 0);"></td><td></td></tr><tr><td><input type="radio" name="tzwXTLz0OddnrmIpOZ5k1_AscoreSub_radio" id="tzwXTLz0OddnrmIpOZ5k1_AscoreSub_1" value="1" onclick="tzwXTLz0OddnrmIpOZ5k1_AscoreSub.setResp(this, 1);"></td><td></td></tr><tr><td><input type="radio" name="tzwXTLz0OddnrmIpOZ5k1_AscoreSub_radio" id="tzwXTLz0OddnrmIpOZ5k1_AscoreSub_2" value="2" onclick="tzwXTLz0OddnrmIpOZ5k1_AscoreSub.setResp(this, 2);"></td><td></td></tr><tr><td><input type="radio" name="tzwXTLz0OddnrmIpOZ5k1_AscoreSub_radio" id="tzwXTLz0OddnrmIpOZ5k1_AscoreSub_3" value="3" onclick="tzwXTLz0OddnrmIpOZ5k1_AscoreSub.setResp(this, 3);"></td><td></td></tr></table></form></div></div><script type="text/JavaScript">
+var AWefo9pCuGjDiHVyDDYAKf_AscoreSub = {
+
+	fId : "AWefo9pCuGjDiHVyDDYAKf",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+case "" : {
+		var vForm = document.forms.AWefo9pCuGjDiHVyDDYAKf_AscoreSub_form;
+		for (var i=0; i < vForm.length; i++) {
+			vForm.elements[i].disabled = false;
+			vForm.elements[i].checked = false;
+		}
+
+var vLoadRespSession = "eval";
+var vResp = scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, "choice");
+		if(vResp != null) sc$("AWefo9pCuGjDiHVyDDYAKf_AscoreSub_"+vResp).checked = true;
+
+		this.setSolution(false);
+this.setResp = function(pInput, pIdx) {
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}	
+
+		this.computeScore = function() {
+
+		this.fMinPts = 0;
+		this.fMaxPts = 1;
+		this.fScorePts = document.forms.AWefo9pCuGjDiHVyDDYAKf_AscoreSub_form.AWefo9pCuGjDiHVyDDYAKf_AscoreSub_radio[0].checked ?  this.fMaxPts : this.fMinPts;
+
+		//alert("score:::::"+this.fMinPts+" - "+this.fScorePts+" - "+this.fMaxPts);
+var vScoreSession = "eval";
+		if(this.fScorePts != null) scServices.assmntMgr.setPts(this.fId, vScoreSession, this.fMinPts, this.fScorePts, this.fMaxPts);
+
+			this.refreshScoresFeedbacks();
+		}
+
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.AWefo9pCuGjDiHVyDDYAKf_AscoreSub_form;
+		switch(this.fCurSeq) {
+
+	case "" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+			return "";
+
+	return null;
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+	},
+	solIsShown : false,
+	setSolution : function(pShown){
+		var vTR = document.forms.AWefo9pCuGjDiHVyDDYAKf_AscoreSub_form.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		vTR = vTR.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		if(vTR.nodeName.toLowerCase()=="tbody") vTR = vTR.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		if(!pShown && this.solIsShown) {
+			while(vTR) {
+				if(vTR.nodeName.toLowerCase()=="tr") {
+					var vOffs = vTR.className.indexOf("assmntSol");
+					if(vOffs>=0) vTR.className = vTR.className.substring(0, vOffs) + vTR.className.substring(vOffs+14);
+				}
+				vTR = vTR.nextSibling;
+			}
+		} else if(pShown && ! this.solIsShown) {
+
+			var vIdx = 0;
+			while(vTR) {
+				if(vTR.nodeName.toLowerCase()=="tr") {
+					vIdx++;
+					vTR.className = ( vIdx == 1 ? "assmntSolRight " : "assmntSolWrong ") + vTR.className;
+				}
+				vTR = vTR.nextSibling;
+			}
+
+		}
+		this.solIsShown = pShown;
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("AWefo9pCuGjDiHVyDDYAKf_AscoreSub_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = AWefo9pCuGjDiHVyDDYAKf_AscoreSub;
+scOnUnloads[scOnUnloads.length] = AWefo9pCuGjDiHVyDDYAKf_AscoreSub;
+</script><div id="AWefo9pCuGjDiHVyDDYAKf_AscoreSub_A" style="display:none;"><div style="display: none;"><form action name="AWefo9pCuGjDiHVyDDYAKf_AscoreSub_form" id="AWefo9pCuGjDiHVyDDYAKf_AscoreSub_form"><table><tr><td><input type="radio" name="AWefo9pCuGjDiHVyDDYAKf_AscoreSub_radio" id="AWefo9pCuGjDiHVyDDYAKf_AscoreSub_0" value="0" onclick="AWefo9pCuGjDiHVyDDYAKf_AscoreSub.setResp(this, 0);"></td><td></td></tr><tr><td><input type="radio" name="AWefo9pCuGjDiHVyDDYAKf_AscoreSub_radio" id="AWefo9pCuGjDiHVyDDYAKf_AscoreSub_1" value="1" onclick="AWefo9pCuGjDiHVyDDYAKf_AscoreSub.setResp(this, 1);"></td><td></td></tr><tr><td><input type="radio" name="AWefo9pCuGjDiHVyDDYAKf_AscoreSub_radio" id="AWefo9pCuGjDiHVyDDYAKf_AscoreSub_2" value="2" onclick="AWefo9pCuGjDiHVyDDYAKf_AscoreSub.setResp(this, 2);"></td><td></td></tr></table></form></div></div><script type="text/JavaScript">
+var HVx8us7ABtErPfqGnGPFe_AscoreSub = {
+
+	fId : "HVx8us7ABtErPfqGnGPFe",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+case "" : {
+		var vForm = document.forms.HVx8us7ABtErPfqGnGPFe_AscoreSub_form;
+		for (var i=0; i < vForm.length; i++) {
+			vForm.elements[i].disabled = false;
+			vForm.elements[i].checked = false;
+		}
+
+var vLoadRespSession = "eval";
+var vResp = scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, "choice");
+		if(vResp != null) sc$("HVx8us7ABtErPfqGnGPFe_AscoreSub_"+vResp).checked = true;
+
+		this.setSolution(false);
+this.setResp = function(pInput, pIdx) {
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}	
+
+		this.computeScore = function() {
+
+		this.fMinPts = 0;
+		this.fMaxPts = 1;
+		this.fScorePts = document.forms.HVx8us7ABtErPfqGnGPFe_AscoreSub_form.HVx8us7ABtErPfqGnGPFe_AscoreSub_radio[2].checked ?  this.fMaxPts : this.fMinPts;
+
+		//alert("score:::::"+this.fMinPts+" - "+this.fScorePts+" - "+this.fMaxPts);
+var vScoreSession = "eval";
+		if(this.fScorePts != null) scServices.assmntMgr.setPts(this.fId, vScoreSession, this.fMinPts, this.fScorePts, this.fMaxPts);
+
+			this.refreshScoresFeedbacks();
+		}
+
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.HVx8us7ABtErPfqGnGPFe_AscoreSub_form;
+		switch(this.fCurSeq) {
+
+	case "" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+			return "";
+
+	return null;
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+	},
+	solIsShown : false,
+	setSolution : function(pShown){
+		var vTR = document.forms.HVx8us7ABtErPfqGnGPFe_AscoreSub_form.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		vTR = vTR.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		if(vTR.nodeName.toLowerCase()=="tbody") vTR = vTR.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		if(!pShown && this.solIsShown) {
+			while(vTR) {
+				if(vTR.nodeName.toLowerCase()=="tr") {
+					var vOffs = vTR.className.indexOf("assmntSol");
+					if(vOffs>=0) vTR.className = vTR.className.substring(0, vOffs) + vTR.className.substring(vOffs+14);
+				}
+				vTR = vTR.nextSibling;
+			}
+		} else if(pShown && ! this.solIsShown) {
+
+			var vIdx = 0;
+			while(vTR) {
+				if(vTR.nodeName.toLowerCase()=="tr") {
+					vIdx++;
+					vTR.className = ( vIdx == 3 ? "assmntSolRight " : "assmntSolWrong ") + vTR.className;
+				}
+				vTR = vTR.nextSibling;
+			}
+
+		}
+		this.solIsShown = pShown;
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("HVx8us7ABtErPfqGnGPFe_AscoreSub_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = HVx8us7ABtErPfqGnGPFe_AscoreSub;
+scOnUnloads[scOnUnloads.length] = HVx8us7ABtErPfqGnGPFe_AscoreSub;
+</script><div id="HVx8us7ABtErPfqGnGPFe_AscoreSub_A" style="display:none;"><div style="display: none;"><form action name="HVx8us7ABtErPfqGnGPFe_AscoreSub_form" id="HVx8us7ABtErPfqGnGPFe_AscoreSub_form"><table><tr><td><input type="radio" name="HVx8us7ABtErPfqGnGPFe_AscoreSub_radio" id="HVx8us7ABtErPfqGnGPFe_AscoreSub_0" value="0" onclick="HVx8us7ABtErPfqGnGPFe_AscoreSub.setResp(this, 0);"></td><td></td></tr><tr><td><input type="radio" name="HVx8us7ABtErPfqGnGPFe_AscoreSub_radio" id="HVx8us7ABtErPfqGnGPFe_AscoreSub_1" value="1" onclick="HVx8us7ABtErPfqGnGPFe_AscoreSub.setResp(this, 1);"></td><td></td></tr><tr><td><input type="radio" name="HVx8us7ABtErPfqGnGPFe_AscoreSub_radio" id="HVx8us7ABtErPfqGnGPFe_AscoreSub_2" value="2" onclick="HVx8us7ABtErPfqGnGPFe_AscoreSub.setResp(this, 2);"></td><td></td></tr><tr><td><input type="radio" name="HVx8us7ABtErPfqGnGPFe_AscoreSub_radio" id="HVx8us7ABtErPfqGnGPFe_AscoreSub_3" value="3" onclick="HVx8us7ABtErPfqGnGPFe_AscoreSub.setResp(this, 3);"></td><td></td></tr></table></form></div></div><script type="text/JavaScript">
+var E4VAHIU7JSiGBZIKqqOCyi_AscoreSub = {
+
+	fId : "E4VAHIU7JSiGBZIKqqOCyi",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+case "" : {
+		var vForm = document.forms.E4VAHIU7JSiGBZIKqqOCyi_AscoreSub_form;
+		for (var i=0; i < vForm.length; i++) {
+			vForm.elements[i].disabled = false;
+			vForm.elements[i].checked = false;
+		}
+
+var vLoadRespSession = "eval";
+var vResp = scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, "choice");
+		if(vResp != null) sc$("E4VAHIU7JSiGBZIKqqOCyi_AscoreSub_"+vResp).checked = true;
+
+		this.setSolution(false);
+this.setResp = function(pInput, pIdx) {
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}	
+
+		this.computeScore = function() {
+
+		this.fMinPts = 0;
+		this.fMaxPts = 1;
+		this.fScorePts = document.forms.E4VAHIU7JSiGBZIKqqOCyi_AscoreSub_form.E4VAHIU7JSiGBZIKqqOCyi_AscoreSub_radio[2].checked ?  this.fMaxPts : this.fMinPts;
+
+		//alert("score:::::"+this.fMinPts+" - "+this.fScorePts+" - "+this.fMaxPts);
+var vScoreSession = "eval";
+		if(this.fScorePts != null) scServices.assmntMgr.setPts(this.fId, vScoreSession, this.fMinPts, this.fScorePts, this.fMaxPts);
+
+			this.refreshScoresFeedbacks();
+		}
+
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.E4VAHIU7JSiGBZIKqqOCyi_AscoreSub_form;
+		switch(this.fCurSeq) {
+
+	case "" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+			return "";
+
+	return null;
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+	},
+	solIsShown : false,
+	setSolution : function(pShown){
+		var vTR = document.forms.E4VAHIU7JSiGBZIKqqOCyi_AscoreSub_form.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		vTR = vTR.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		if(vTR.nodeName.toLowerCase()=="tbody") vTR = vTR.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		if(!pShown && this.solIsShown) {
+			while(vTR) {
+				if(vTR.nodeName.toLowerCase()=="tr") {
+					var vOffs = vTR.className.indexOf("assmntSol");
+					if(vOffs>=0) vTR.className = vTR.className.substring(0, vOffs) + vTR.className.substring(vOffs+14);
+				}
+				vTR = vTR.nextSibling;
+			}
+		} else if(pShown && ! this.solIsShown) {
+
+			var vIdx = 0;
+			while(vTR) {
+				if(vTR.nodeName.toLowerCase()=="tr") {
+					vIdx++;
+					vTR.className = ( vIdx == 3 ? "assmntSolRight " : "assmntSolWrong ") + vTR.className;
+				}
+				vTR = vTR.nextSibling;
+			}
+
+		}
+		this.solIsShown = pShown;
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("E4VAHIU7JSiGBZIKqqOCyi_AscoreSub_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = E4VAHIU7JSiGBZIKqqOCyi_AscoreSub;
+scOnUnloads[scOnUnloads.length] = E4VAHIU7JSiGBZIKqqOCyi_AscoreSub;
+</script><div id="E4VAHIU7JSiGBZIKqqOCyi_AscoreSub_A" style="display:none;"><div style="display: none;"><form action name="E4VAHIU7JSiGBZIKqqOCyi_AscoreSub_form" id="E4VAHIU7JSiGBZIKqqOCyi_AscoreSub_form"><table><tr><td><input type="radio" name="E4VAHIU7JSiGBZIKqqOCyi_AscoreSub_radio" id="E4VAHIU7JSiGBZIKqqOCyi_AscoreSub_0" value="0" onclick="E4VAHIU7JSiGBZIKqqOCyi_AscoreSub.setResp(this, 0);"></td><td></td></tr><tr><td><input type="radio" name="E4VAHIU7JSiGBZIKqqOCyi_AscoreSub_radio" id="E4VAHIU7JSiGBZIKqqOCyi_AscoreSub_1" value="1" onclick="E4VAHIU7JSiGBZIKqqOCyi_AscoreSub.setResp(this, 1);"></td><td></td></tr><tr><td><input type="radio" name="E4VAHIU7JSiGBZIKqqOCyi_AscoreSub_radio" id="E4VAHIU7JSiGBZIKqqOCyi_AscoreSub_2" value="2" onclick="E4VAHIU7JSiGBZIKqqOCyi_AscoreSub.setResp(this, 2);"></td><td></td></tr><tr><td><input type="radio" name="E4VAHIU7JSiGBZIKqqOCyi_AscoreSub_radio" id="E4VAHIU7JSiGBZIKqqOCyi_AscoreSub_3" value="3" onclick="E4VAHIU7JSiGBZIKqqOCyi_AscoreSub.setResp(this, 3);"></td><td></td></tr><tr><td><input type="radio" name="E4VAHIU7JSiGBZIKqqOCyi_AscoreSub_radio" id="E4VAHIU7JSiGBZIKqqOCyi_AscoreSub_4" value="4" onclick="E4VAHIU7JSiGBZIKqqOCyi_AscoreSub.setResp(this, 4);"></td><td></td></tr></table></form></div></div><script type="text/JavaScript">
+var kgAPVBdyErkuAKoDn7Ln4g_AscoreSub = {
+
+	fId : "kgAPVBdyErkuAKoDn7Ln4g",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+case "" : {
+		var vForm = document.forms.kgAPVBdyErkuAKoDn7Ln4g_AscoreSub_form;
+		for (var i=0; i < vForm.length; i++) {
+			vForm.elements[i].disabled = false;
+			vForm.elements[i].checked = false;
+		}
+
+var vLoadRespSession = "eval";
+var vResp = scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, "choice");
+		if(vResp != null) sc$("kgAPVBdyErkuAKoDn7Ln4g_AscoreSub_"+vResp).checked = true;
+
+		this.setSolution(false);
+this.setResp = function(pInput, pIdx) {
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}	
+
+		this.computeScore = function() {
+
+		this.fMinPts = 0;
+		this.fMaxPts = 1;
+		this.fScorePts = document.forms.kgAPVBdyErkuAKoDn7Ln4g_AscoreSub_form.kgAPVBdyErkuAKoDn7Ln4g_AscoreSub_radio[0].checked ?  this.fMaxPts : this.fMinPts;
+
+		//alert("score:::::"+this.fMinPts+" - "+this.fScorePts+" - "+this.fMaxPts);
+var vScoreSession = "eval";
+		if(this.fScorePts != null) scServices.assmntMgr.setPts(this.fId, vScoreSession, this.fMinPts, this.fScorePts, this.fMaxPts);
+
+			this.refreshScoresFeedbacks();
+		}
+
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.kgAPVBdyErkuAKoDn7Ln4g_AscoreSub_form;
+		switch(this.fCurSeq) {
+
+	case "" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+			return "";
+
+	return null;
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+	},
+	solIsShown : false,
+	setSolution : function(pShown){
+		var vTR = document.forms.kgAPVBdyErkuAKoDn7Ln4g_AscoreSub_form.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		vTR = vTR.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		if(vTR.nodeName.toLowerCase()=="tbody") vTR = vTR.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		if(!pShown && this.solIsShown) {
+			while(vTR) {
+				if(vTR.nodeName.toLowerCase()=="tr") {
+					var vOffs = vTR.className.indexOf("assmntSol");
+					if(vOffs>=0) vTR.className = vTR.className.substring(0, vOffs) + vTR.className.substring(vOffs+14);
+				}
+				vTR = vTR.nextSibling;
+			}
+		} else if(pShown && ! this.solIsShown) {
+
+			var vIdx = 0;
+			while(vTR) {
+				if(vTR.nodeName.toLowerCase()=="tr") {
+					vIdx++;
+					vTR.className = ( vIdx == 1 ? "assmntSolRight " : "assmntSolWrong ") + vTR.className;
+				}
+				vTR = vTR.nextSibling;
+			}
+
+		}
+		this.solIsShown = pShown;
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("kgAPVBdyErkuAKoDn7Ln4g_AscoreSub_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = kgAPVBdyErkuAKoDn7Ln4g_AscoreSub;
+scOnUnloads[scOnUnloads.length] = kgAPVBdyErkuAKoDn7Ln4g_AscoreSub;
+</script><div id="kgAPVBdyErkuAKoDn7Ln4g_AscoreSub_A" style="display:none;"><div style="display: none;"><form action name="kgAPVBdyErkuAKoDn7Ln4g_AscoreSub_form" id="kgAPVBdyErkuAKoDn7Ln4g_AscoreSub_form"><table><tr><td><input type="radio" name="kgAPVBdyErkuAKoDn7Ln4g_AscoreSub_radio" id="kgAPVBdyErkuAKoDn7Ln4g_AscoreSub_0" value="0" onclick="kgAPVBdyErkuAKoDn7Ln4g_AscoreSub.setResp(this, 0);"></td><td></td></tr><tr><td><input type="radio" name="kgAPVBdyErkuAKoDn7Ln4g_AscoreSub_radio" id="kgAPVBdyErkuAKoDn7Ln4g_AscoreSub_1" value="1" onclick="kgAPVBdyErkuAKoDn7Ln4g_AscoreSub.setResp(this, 1);"></td><td></td></tr><tr><td><input type="radio" name="kgAPVBdyErkuAKoDn7Ln4g_AscoreSub_radio" id="kgAPVBdyErkuAKoDn7Ln4g_AscoreSub_2" value="2" onclick="kgAPVBdyErkuAKoDn7Ln4g_AscoreSub.setResp(this, 2);"></td><td></td></tr><tr><td><input type="radio" name="kgAPVBdyErkuAKoDn7Ln4g_AscoreSub_radio" id="kgAPVBdyErkuAKoDn7Ln4g_AscoreSub_3" value="3" onclick="kgAPVBdyErkuAKoDn7Ln4g_AscoreSub.setResp(this, 3);"></td><td></td></tr></table></form></div></div><script type="text/JavaScript">
+var kC6pSenSwRi26RGd8M2uhf_AscoreSub = {
+
+	fId : "kC6pSenSwRi26RGd8M2uhf",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+case "" : {
+		var vForm = document.forms.kC6pSenSwRi26RGd8M2uhf_AscoreSub_form;
+		for (var i=0; i < vForm.length; i++) {
+			vForm.elements[i].disabled = false;
+			vForm.elements[i].checked = false;
+		}
+
+var vLoadRespSession = "eval";
+var vResp = scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, "choice");
+		if(vResp != null) sc$("kC6pSenSwRi26RGd8M2uhf_AscoreSub_"+vResp).checked = true;
+
+		this.setSolution(false);
+this.setResp = function(pInput, pIdx) {
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}	
+
+		this.computeScore = function() {
+
+		this.fMinPts = 0;
+		this.fMaxPts = 1;
+		this.fScorePts = document.forms.kC6pSenSwRi26RGd8M2uhf_AscoreSub_form.kC6pSenSwRi26RGd8M2uhf_AscoreSub_radio[2].checked ?  this.fMaxPts : this.fMinPts;
+
+		//alert("score:::::"+this.fMinPts+" - "+this.fScorePts+" - "+this.fMaxPts);
+var vScoreSession = "eval";
+		if(this.fScorePts != null) scServices.assmntMgr.setPts(this.fId, vScoreSession, this.fMinPts, this.fScorePts, this.fMaxPts);
+
+			this.refreshScoresFeedbacks();
+		}
+
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.kC6pSenSwRi26RGd8M2uhf_AscoreSub_form;
+		switch(this.fCurSeq) {
+
+	case "" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+			return "";
+
+	return null;
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+	},
+	solIsShown : false,
+	setSolution : function(pShown){
+		var vTR = document.forms.kC6pSenSwRi26RGd8M2uhf_AscoreSub_form.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		vTR = vTR.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		if(vTR.nodeName.toLowerCase()=="tbody") vTR = vTR.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		if(!pShown && this.solIsShown) {
+			while(vTR) {
+				if(vTR.nodeName.toLowerCase()=="tr") {
+					var vOffs = vTR.className.indexOf("assmntSol");
+					if(vOffs>=0) vTR.className = vTR.className.substring(0, vOffs) + vTR.className.substring(vOffs+14);
+				}
+				vTR = vTR.nextSibling;
+			}
+		} else if(pShown && ! this.solIsShown) {
+
+			var vIdx = 0;
+			while(vTR) {
+				if(vTR.nodeName.toLowerCase()=="tr") {
+					vIdx++;
+					vTR.className = ( vIdx == 3 ? "assmntSolRight " : "assmntSolWrong ") + vTR.className;
+				}
+				vTR = vTR.nextSibling;
+			}
+
+		}
+		this.solIsShown = pShown;
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("kC6pSenSwRi26RGd8M2uhf_AscoreSub_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = kC6pSenSwRi26RGd8M2uhf_AscoreSub;
+scOnUnloads[scOnUnloads.length] = kC6pSenSwRi26RGd8M2uhf_AscoreSub;
+</script><div id="kC6pSenSwRi26RGd8M2uhf_AscoreSub_A" style="display:none;"><div style="display: none;"><form action name="kC6pSenSwRi26RGd8M2uhf_AscoreSub_form" id="kC6pSenSwRi26RGd8M2uhf_AscoreSub_form"><table><tr><td><input type="radio" name="kC6pSenSwRi26RGd8M2uhf_AscoreSub_radio" id="kC6pSenSwRi26RGd8M2uhf_AscoreSub_0" value="0" onclick="kC6pSenSwRi26RGd8M2uhf_AscoreSub.setResp(this, 0);"></td><td></td></tr><tr><td><input type="radio" name="kC6pSenSwRi26RGd8M2uhf_AscoreSub_radio" id="kC6pSenSwRi26RGd8M2uhf_AscoreSub_1" value="1" onclick="kC6pSenSwRi26RGd8M2uhf_AscoreSub.setResp(this, 1);"></td><td></td></tr><tr><td><input type="radio" name="kC6pSenSwRi26RGd8M2uhf_AscoreSub_radio" id="kC6pSenSwRi26RGd8M2uhf_AscoreSub_2" value="2" onclick="kC6pSenSwRi26RGd8M2uhf_AscoreSub.setResp(this, 2);"></td><td></td></tr><tr><td><input type="radio" name="kC6pSenSwRi26RGd8M2uhf_AscoreSub_radio" id="kC6pSenSwRi26RGd8M2uhf_AscoreSub_3" value="3" onclick="kC6pSenSwRi26RGd8M2uhf_AscoreSub.setResp(this, 3);"></td><td></td></tr><tr><td><input type="radio" name="kC6pSenSwRi26RGd8M2uhf_AscoreSub_radio" id="kC6pSenSwRi26RGd8M2uhf_AscoreSub_4" value="4" onclick="kC6pSenSwRi26RGd8M2uhf_AscoreSub.setResp(this, 4);"></td><td></td></tr></table></form></div></div><script type="text/JavaScript">
+var thPVI25zgrhBHofe4T7M2h_AscoreSub = {
+
+	fId : "thPVI25zgrhBHofe4T7M2h",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+case "" : {
+		var vForm = document.forms.thPVI25zgrhBHofe4T7M2h_AscoreSub_form;
+		for (var i=0; i < vForm.length; i++) {
+			vForm.elements[i].disabled = false;
+			vForm.elements[i].checked = false;
+		}
+
+var vLoadRespSession = "eval";
+var vResp = scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, "choice");
+		if(vResp != null) sc$("thPVI25zgrhBHofe4T7M2h_AscoreSub_"+vResp).checked = true;
+
+		this.setSolution(false);
+this.setResp = function(pInput, pIdx) {
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}	
+
+		this.computeScore = function() {
+
+		this.fMinPts = 0;
+		this.fMaxPts = 1;
+		this.fScorePts = document.forms.thPVI25zgrhBHofe4T7M2h_AscoreSub_form.thPVI25zgrhBHofe4T7M2h_AscoreSub_radio[2].checked ?  this.fMaxPts : this.fMinPts;
+
+		//alert("score:::::"+this.fMinPts+" - "+this.fScorePts+" - "+this.fMaxPts);
+var vScoreSession = "eval";
+		if(this.fScorePts != null) scServices.assmntMgr.setPts(this.fId, vScoreSession, this.fMinPts, this.fScorePts, this.fMaxPts);
+
+			this.refreshScoresFeedbacks();
+		}
+
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.thPVI25zgrhBHofe4T7M2h_AscoreSub_form;
+		switch(this.fCurSeq) {
+
+	case "" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+			return "";
+
+	return null;
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+	},
+	solIsShown : false,
+	setSolution : function(pShown){
+		var vTR = document.forms.thPVI25zgrhBHofe4T7M2h_AscoreSub_form.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		vTR = vTR.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		if(vTR.nodeName.toLowerCase()=="tbody") vTR = vTR.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		if(!pShown && this.solIsShown) {
+			while(vTR) {
+				if(vTR.nodeName.toLowerCase()=="tr") {
+					var vOffs = vTR.className.indexOf("assmntSol");
+					if(vOffs>=0) vTR.className = vTR.className.substring(0, vOffs) + vTR.className.substring(vOffs+14);
+				}
+				vTR = vTR.nextSibling;
+			}
+		} else if(pShown && ! this.solIsShown) {
+
+			var vIdx = 0;
+			while(vTR) {
+				if(vTR.nodeName.toLowerCase()=="tr") {
+					vIdx++;
+					vTR.className = ( vIdx == 3 ? "assmntSolRight " : "assmntSolWrong ") + vTR.className;
+				}
+				vTR = vTR.nextSibling;
+			}
+
+		}
+		this.solIsShown = pShown;
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("thPVI25zgrhBHofe4T7M2h_AscoreSub_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = thPVI25zgrhBHofe4T7M2h_AscoreSub;
+scOnUnloads[scOnUnloads.length] = thPVI25zgrhBHofe4T7M2h_AscoreSub;
+</script><div id="thPVI25zgrhBHofe4T7M2h_AscoreSub_A" style="display:none;"><div style="display: none;"><form action name="thPVI25zgrhBHofe4T7M2h_AscoreSub_form" id="thPVI25zgrhBHofe4T7M2h_AscoreSub_form"><table><tr><td><input type="radio" name="thPVI25zgrhBHofe4T7M2h_AscoreSub_radio" id="thPVI25zgrhBHofe4T7M2h_AscoreSub_0" value="0" onclick="thPVI25zgrhBHofe4T7M2h_AscoreSub.setResp(this, 0);"></td><td></td></tr><tr><td><input type="radio" name="thPVI25zgrhBHofe4T7M2h_AscoreSub_radio" id="thPVI25zgrhBHofe4T7M2h_AscoreSub_1" value="1" onclick="thPVI25zgrhBHofe4T7M2h_AscoreSub.setResp(this, 1);"></td><td></td></tr><tr><td><input type="radio" name="thPVI25zgrhBHofe4T7M2h_AscoreSub_radio" id="thPVI25zgrhBHofe4T7M2h_AscoreSub_2" value="2" onclick="thPVI25zgrhBHofe4T7M2h_AscoreSub.setResp(this, 2);"></td><td></td></tr><tr><td><input type="radio" name="thPVI25zgrhBHofe4T7M2h_AscoreSub_radio" id="thPVI25zgrhBHofe4T7M2h_AscoreSub_3" value="3" onclick="thPVI25zgrhBHofe4T7M2h_AscoreSub.setResp(this, 3);"></td><td></td></tr><tr><td><input type="radio" name="thPVI25zgrhBHofe4T7M2h_AscoreSub_radio" id="thPVI25zgrhBHofe4T7M2h_AscoreSub_4" value="4" onclick="thPVI25zgrhBHofe4T7M2h_AscoreSub.setResp(this, 4);"></td><td></td></tr></table></form></div></div><script type="text/JavaScript">
+var J93VGSxxVFk24WdaO9yezb_AscoreSub = {
+
+	fId : "J93VGSxxVFk24WdaO9yezb",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+case "" : {
+		var vForm = document.forms.J93VGSxxVFk24WdaO9yezb_AscoreSub_form;
+		for (var i=0; i < vForm.length; i++) {
+			vForm.elements[i].disabled = false;
+			vForm.elements[i].checked = false;
+		}
+
+var vLoadRespSession = "eval";
+var vResp = scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, "choice");
+		if(vResp != null) sc$("J93VGSxxVFk24WdaO9yezb_AscoreSub_"+vResp).checked = true;
+
+		this.setSolution(false);
+this.setResp = function(pInput, pIdx) {
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}	
+
+		this.computeScore = function() {
+
+		this.fMinPts = 0;
+		this.fMaxPts = 1;
+		this.fScorePts = document.forms.J93VGSxxVFk24WdaO9yezb_AscoreSub_form.J93VGSxxVFk24WdaO9yezb_AscoreSub_radio[1].checked ?  this.fMaxPts : this.fMinPts;
+
+		//alert("score:::::"+this.fMinPts+" - "+this.fScorePts+" - "+this.fMaxPts);
+var vScoreSession = "eval";
+		if(this.fScorePts != null) scServices.assmntMgr.setPts(this.fId, vScoreSession, this.fMinPts, this.fScorePts, this.fMaxPts);
+
+			this.refreshScoresFeedbacks();
+		}
+
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.J93VGSxxVFk24WdaO9yezb_AscoreSub_form;
+		switch(this.fCurSeq) {
+
+	case "" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+			return "";
+
+	return null;
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+	},
+	solIsShown : false,
+	setSolution : function(pShown){
+		var vTR = document.forms.J93VGSxxVFk24WdaO9yezb_AscoreSub_form.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		vTR = vTR.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		if(vTR.nodeName.toLowerCase()=="tbody") vTR = vTR.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		if(!pShown && this.solIsShown) {
+			while(vTR) {
+				if(vTR.nodeName.toLowerCase()=="tr") {
+					var vOffs = vTR.className.indexOf("assmntSol");
+					if(vOffs>=0) vTR.className = vTR.className.substring(0, vOffs) + vTR.className.substring(vOffs+14);
+				}
+				vTR = vTR.nextSibling;
+			}
+		} else if(pShown && ! this.solIsShown) {
+
+			var vIdx = 0;
+			while(vTR) {
+				if(vTR.nodeName.toLowerCase()=="tr") {
+					vIdx++;
+					vTR.className = ( vIdx == 2 ? "assmntSolRight " : "assmntSolWrong ") + vTR.className;
+				}
+				vTR = vTR.nextSibling;
+			}
+
+		}
+		this.solIsShown = pShown;
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("J93VGSxxVFk24WdaO9yezb_AscoreSub_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = J93VGSxxVFk24WdaO9yezb_AscoreSub;
+scOnUnloads[scOnUnloads.length] = J93VGSxxVFk24WdaO9yezb_AscoreSub;
+</script><div id="J93VGSxxVFk24WdaO9yezb_AscoreSub_A" style="display:none;"><div style="display: none;"><form action name="J93VGSxxVFk24WdaO9yezb_AscoreSub_form" id="J93VGSxxVFk24WdaO9yezb_AscoreSub_form"><table><tr><td><input type="radio" name="J93VGSxxVFk24WdaO9yezb_AscoreSub_radio" id="J93VGSxxVFk24WdaO9yezb_AscoreSub_0" value="0" onclick="J93VGSxxVFk24WdaO9yezb_AscoreSub.setResp(this, 0);"></td><td></td></tr><tr><td><input type="radio" name="J93VGSxxVFk24WdaO9yezb_AscoreSub_radio" id="J93VGSxxVFk24WdaO9yezb_AscoreSub_1" value="1" onclick="J93VGSxxVFk24WdaO9yezb_AscoreSub.setResp(this, 1);"></td><td></td></tr><tr><td><input type="radio" name="J93VGSxxVFk24WdaO9yezb_AscoreSub_radio" id="J93VGSxxVFk24WdaO9yezb_AscoreSub_2" value="2" onclick="J93VGSxxVFk24WdaO9yezb_AscoreSub.setResp(this, 2);"></td><td></td></tr><tr><td><input type="radio" name="J93VGSxxVFk24WdaO9yezb_AscoreSub_radio" id="J93VGSxxVFk24WdaO9yezb_AscoreSub_3" value="3" onclick="J93VGSxxVFk24WdaO9yezb_AscoreSub.setResp(this, 3);"></td><td></td></tr><tr><td><input type="radio" name="J93VGSxxVFk24WdaO9yezb_AscoreSub_radio" id="J93VGSxxVFk24WdaO9yezb_AscoreSub_4" value="4" onclick="J93VGSxxVFk24WdaO9yezb_AscoreSub.setResp(this, 4);"></td><td></td></tr></table></form></div></div><script type="text/JavaScript">
+var nVjkm6rjKkdSsMkOXJfhGh_AscoreSub = {
+
+	fId : "nVjkm6rjKkdSsMkOXJfhGh",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+case "" : {
+		var vForm = document.forms.nVjkm6rjKkdSsMkOXJfhGh_AscoreSub_form;
+		for (var i=0; i < vForm.length; i++) {
+			vForm.elements[i].disabled = false;
+			vForm.elements[i].checked = false;
+		}
+
+var vLoadRespSession = "eval";
+var vResp = scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, "choice");
+		if(vResp != null) sc$("nVjkm6rjKkdSsMkOXJfhGh_AscoreSub_"+vResp).checked = true;
+
+		this.setSolution(false);
+this.setResp = function(pInput, pIdx) {
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}	
+
+		this.computeScore = function() {
+
+		this.fMinPts = 0;
+		this.fMaxPts = 1;
+		this.fScorePts = document.forms.nVjkm6rjKkdSsMkOXJfhGh_AscoreSub_form.nVjkm6rjKkdSsMkOXJfhGh_AscoreSub_radio[2].checked ?  this.fMaxPts : this.fMinPts;
+
+		//alert("score:::::"+this.fMinPts+" - "+this.fScorePts+" - "+this.fMaxPts);
+var vScoreSession = "eval";
+		if(this.fScorePts != null) scServices.assmntMgr.setPts(this.fId, vScoreSession, this.fMinPts, this.fScorePts, this.fMaxPts);
+
+			this.refreshScoresFeedbacks();
+		}
+
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.nVjkm6rjKkdSsMkOXJfhGh_AscoreSub_form;
+		switch(this.fCurSeq) {
+
+	case "" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+			return "";
+
+	return null;
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+	},
+	solIsShown : false,
+	setSolution : function(pShown){
+		var vTR = document.forms.nVjkm6rjKkdSsMkOXJfhGh_AscoreSub_form.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		vTR = vTR.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		if(vTR.nodeName.toLowerCase()=="tbody") vTR = vTR.firstChild;
+		while(vTR.nodeType!=1) vTR = vTR.nextSibling;
+		if(!pShown && this.solIsShown) {
+			while(vTR) {
+				if(vTR.nodeName.toLowerCase()=="tr") {
+					var vOffs = vTR.className.indexOf("assmntSol");
+					if(vOffs>=0) vTR.className = vTR.className.substring(0, vOffs) + vTR.className.substring(vOffs+14);
+				}
+				vTR = vTR.nextSibling;
+			}
+		} else if(pShown && ! this.solIsShown) {
+
+			var vIdx = 0;
+			while(vTR) {
+				if(vTR.nodeName.toLowerCase()=="tr") {
+					vIdx++;
+					vTR.className = ( vIdx == 3 ? "assmntSolRight " : "assmntSolWrong ") + vTR.className;
+				}
+				vTR = vTR.nextSibling;
+			}
+
+		}
+		this.solIsShown = pShown;
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("nVjkm6rjKkdSsMkOXJfhGh_AscoreSub_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	unloadSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = nVjkm6rjKkdSsMkOXJfhGh_AscoreSub;
+scOnUnloads[scOnUnloads.length] = nVjkm6rjKkdSsMkOXJfhGh_AscoreSub;
+</script><div id="nVjkm6rjKkdSsMkOXJfhGh_AscoreSub_A" style="display:none;"><div style="display: none;"><form action name="nVjkm6rjKkdSsMkOXJfhGh_AscoreSub_form" id="nVjkm6rjKkdSsMkOXJfhGh_AscoreSub_form"><table><tr><td><input type="radio" name="nVjkm6rjKkdSsMkOXJfhGh_AscoreSub_radio" id="nVjkm6rjKkdSsMkOXJfhGh_AscoreSub_0" value="0" onclick="nVjkm6rjKkdSsMkOXJfhGh_AscoreSub.setResp(this, 0);"></td><td></td></tr><tr><td><input type="radio" name="nVjkm6rjKkdSsMkOXJfhGh_AscoreSub_radio" id="nVjkm6rjKkdSsMkOXJfhGh_AscoreSub_1" value="1" onclick="nVjkm6rjKkdSsMkOXJfhGh_AscoreSub.setResp(this, 1);"></td><td></td></tr><tr><td><input type="radio" name="nVjkm6rjKkdSsMkOXJfhGh_AscoreSub_radio" id="nVjkm6rjKkdSsMkOXJfhGh_AscoreSub_2" value="2" onclick="nVjkm6rjKkdSsMkOXJfhGh_AscoreSub.setResp(this, 2);"></td><td></td></tr><tr><td><input type="radio" name="nVjkm6rjKkdSsMkOXJfhGh_AscoreSub_radio" id="nVjkm6rjKkdSsMkOXJfhGh_AscoreSub_3" value="3" onclick="nVjkm6rjKkdSsMkOXJfhGh_AscoreSub.setResp(this, 3);"></td><td></td></tr></table></form></div></div></div><div class="mainContent "><h1 class="mainContent_ti"><span>R&eacute;sultats du test</span></h1><div class="mainContent_co "><div class="bkSolResOut"><script type="text/JavaScript">
+var C8I8jZusPWhTidw6Ve2DOi_Ascore = {
+
+	fId : "C8I8jZusPWhTidw6Ve2DOi",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+
+	case "score" : {
+scAssmntMgr.setMode(sc$("C8I8jZusPWhTidw6Ve2DOi_Ascore_N_score"), "visible");
+
+		this.computeScore = function(pInput, pIdx) {
+			this.fMinPts = 0;
+			this.fMaxPts = 0;
+			this.fScorePts = 0;
+			var vRate;
+
+		var vSubAssmnt = {fSession:"eval", compute:function(pParent, pId, pRate){
+			this.fMinPts = scServices.assmntMgr.getMinPts(pId, this.fSession)||0;
+			this.fScorePts = scServices.assmntMgr.getScorePts(pId, this.fSession)||0;
+			this.fMaxPts = scServices.assmntMgr.getMaxPts(pId, this.fSession)||1;
+
+			pParent.fMinPts += this.fMinPts;
+			pParent.fScorePts += this.fScorePts;
+			pParent.fMaxPts += this.fMaxPts;
+		}};
+
+		vSubAssmnt.compute(this, "AQFKnVm3TfbsjobS0N1Vc", 1);
+var vScoreSession = "eval";
+			scServices.assmntMgr.setPts(this.fId, vScoreSession, this.fMinPts, this.fScorePts, this.fMaxPts);
+
+						this.refreshScoresFeedbacks();
+		}
+scServices.assmntMgr.setCompletionStatus(this.fId, "eval", "complete"); 
+this.computeScore();
+window.fMinPts = this.fMinPts;
+window.fScorePts = this.fScorePts;
+window.fMaxPts = this.fMaxPts;
+
+if(typeof parent.markedPageMgr != "undefined") parent.markedPageMgr.addPageMarkedStatus(parent.document.location.href, true);
+		this.handleAssmntPts = function(pEvent){if(pEvent.fId=="AQFKnVm3TfbsjobS0N1Vc" || false) this.computeScore();}
+		scServices.assmntMgr.addEventListener(this);
+		this.computeScore();
+
+		break;
+	}
+
+		}
+	}catch(e){alert("failed:::"+e)};
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.C8I8jZusPWhTidw6Ve2DOi_Ascore_form;
+		switch(this.fCurSeq) {
+
+	case "score" : {
+
+		scServices.assmntMgr.removeEventListener(this);
+		this.computeScore();
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+			return "score";
+
+	return null;
+	},
+
+	
+	refreshScoresFeedbacks : function(){
+
+		var vScoreNode = sc$("C8I8jZusPWhTidw6Ve2DOi_Ascore_SN38");
+
+		var vScore = (Math.round((this.fScorePts-this.fMinPts) / (this.fMaxPts-this.fMinPts) * 100) * 1)+ 0;
+if(vScore > 99 && true) {
+			vScoreNode.innerHTML = "<span>Vous avez bien répondu à toutes les questions!"  + "<\/span>";
+			vScoreNode.className = "answBest";
+		} else if(vScore > 49 && vScore <= 99 && true) {
+			vScoreNode.innerHTML = "<span>Vous avez obtenu... " + vScore + "% de bonnes réponses.<\/span>";
+			vScoreNode.className = "answGood";
+		} else if(vScore <= 49 && true) {
+			vScoreNode.innerHTML = "<span>Vous avez obtenu... " + vScore + "% de bonnes réponses.<\/span>";
+			vScoreNode.className = "answBad";
+		} else  {
+			vScoreNode.innerHTML = "";
+			vScoreNode.className = "";
+		}
+var vVal = (this.fScorePts - this.fMinPts) / (this.fMaxPts - this.fMinPts) * 100;
+
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq()); 
+		var vNodeRoot = sc$("C8I8jZusPWhTidw6Ve2DOi_Ascore_A");
+		vNodeRoot.style.display = "block"; 
+	},
+	onUnload: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "B",
+	unloadSortKey: "B"
+};
+
+scOnLoads[scOnLoads.length] = C8I8jZusPWhTidw6Ve2DOi_Ascore;
+scOnUnloads[scOnUnloads.length] = C8I8jZusPWhTidw6Ve2DOi_Ascore;
+</script><div id="C8I8jZusPWhTidw6Ve2DOi_Ascore_A" style="display:none;"><div class="infoScore"><div aria-live="polite" id="C8I8jZusPWhTidw6Ve2DOi_Ascore_N_score"><div id="C8I8jZusPWhTidw6Ve2DOi_Ascore_SN38"><span></span></div></div><div class="feedback "></div></div></div></div><div class="resultE"><a href="autoeval_navigateur_5.html" target="_self" class="btnGotoSolE" title="Consulter les solutions..."><span>Consulter les solutions...</span></a><a class="btnCloseE" href="javascript:void(0);" onclick="window.frameElement.hideSubWindow();">Quitter le test</a></div></div></div></div></div></div></div><div id="evalPlayerPrint"><a href="#" onclick="window.print();return false;" class="printEval" title="Imprimer la page"><span>Imprimer</span></a></div></div>
+  <script type="text/JavaScript" src="../skin/js/skin.js"></script>
+  <script type="text/javascript">tplMgr.init();new scSiRuleAutoMarginW("tplCoMarginW",(tplMgr.fScreenTouch?"ide:tplCo":"bod:"),true,450,100);new scSiRuleFlexH("tplCoFlexTop",(tplMgr.fScreenTouch?"ide:tplCo":"bod:"),true,.3);</script>
+ </body>
+</html>
